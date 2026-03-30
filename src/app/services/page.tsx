@@ -69,7 +69,7 @@ const services = [
 
 const bookingSteps = [
   { num: "01", title: "Browse Verified Profiles", desc: "Explore our curated gallery of 500+ verified companions. Filter by type, region, or preference to find your ideal companion." },
-  { num: "02", title: "Call or WhatsApp", desc: "Reach our booking team at +91 90389 76363. We confirm availability, timing, and answer all questions with complete discretion." },
+  { num: "02", title: "Call or WhatsApp", desc: "Reach our booking team at +91 70 9158 5737. We confirm availability, timing, and answer all questions with complete discretion." },
   { num: "03", title: "Confirm Your Booking", desc: "Share your preferred location (incall or outcall), date, time, and service duration. Receive written confirmation instantly." },
   { num: "04", title: "Enjoy the Experience", desc: "Your companion arrives on time, presented impeccably. Payment is collected at the time of service — no advance required." },
 ];
@@ -98,10 +98,10 @@ export default function ServicesPage() {
               A curated menu of India&apos;s finest companion services. Every category verified, screened, and held to the VVIP standard.
             </p>
             <div className="hero-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
-                📞 Call: +91 90389 76363
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+                📞 Call: +91 70 9158 5737
               </a>
-              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>
+              <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>
                 💬 WhatsApp
               </a>
             </div>
@@ -148,8 +148,8 @@ export default function ServicesPage() {
           <div className="cta-section">
             <h3>Ready to Experience the VVIP Difference?</h3>
             <div className="contact-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call Now</a>
-              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp</a>
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call Now</a>
+              <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp</a>
             </div>
           </div>
         </div>

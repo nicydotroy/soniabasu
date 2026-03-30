@@ -80,10 +80,10 @@ export default function Footer() {
               <p>Same-day availability · 500+ verified profiles · Absolutely discreet</p>
             </div>
             <div className="footer-cta-btns">
-              <a href="tel:+919038976363" className="footer-cta-btn footer-cta-btn--call">
-                <span>📞</span> +91 90389 76363
+              <a href="tel:+917091585737" className="footer-cta-btn footer-cta-btn--call">
+                <span>📞</span> +91 70 9158 5737
               </a>
-              <a href="https://wa.me/919038976363" target="_blank" rel="noopener noreferrer" className="footer-cta-btn footer-cta-btn--wa">
+              <a href="https://wa.me/917091585737" target="_blank" rel="noopener noreferrer" className="footer-cta-btn footer-cta-btn--wa">
                 <span>💬</span> WhatsApp
               </a>
             </div>
@@ -112,15 +112,15 @@ export default function Footer() {
                 India&apos;s most trusted luxury companion service since 2018. Rigorous verification, complete discretion, and 500+ genuine profiles across Mumbai and 150+ cities.
               </p>
               <div className="footer-social-row">
-                <a href="tel:+919038976363" className="footer-social-btn" aria-label="Call VVIP Escorts">
+                <a href="tel:+917091585737" className="footer-social-btn" aria-label="Call VVIP Escorts">
                   <span>📞</span>
                   <span className="fsb-label">Call</span>
                 </a>
-                <a href="https://wa.me/919038976363" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="WhatsApp VVIP Escorts">
+                <a href="https://wa.me/917091585737" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="WhatsApp VVIP Escorts">
                   <span>💬</span>
                   <span className="fsb-label">WhatsApp</span>
                 </a>
-                <a href="https://t.me/+919038976363" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="Telegram VVIP Escorts">
+                <a href="https://t.me/+917091585737" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="Telegram VVIP Escorts">
                   <span>✈️</span>
                   <span className="fsb-label">Telegram</span>
                 </a>

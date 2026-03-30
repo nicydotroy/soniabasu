@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact VVIP Escorts Mumbai | 24/7 Booking Hotline",
   description:
-    "Contact VVIP Escorts Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 90389 76363 for instant confirmation. Discreet, professional response guaranteed.",
+    "Contact VVIP Escorts Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 70 9158 5737 for instant confirmation. Discreet, professional response guaranteed.",
   alternates: { canonical: "https://hotzarina.in/contact" },
 };
 
@@ -31,10 +31,10 @@ export default function ContactPage() {
               Reach our dedicated booking team any time. Instant response, complete confidentiality, zero obligation.
             </p>
             <div className="hero-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
-                📞 Call: +91 90389 76363
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+                📞 Call: +91 70 9158 5737
               </a>
-              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>
+              <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>
                 💬 WhatsApp Now
               </a>
             </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                 <span className="method-icon">📞</span>
                 <div className="method-details">
                   <h3>Phone Booking</h3>
-                  <a href="tel:+919038976363" className="contact-link">+91 90389 76363</a>
+                  <a href="tel:+917091585737" className="contact-link">+91 70 9158 5737</a>
                   <p>Call anytime — 24 hours, 7 days a week. Instant availability confirmation.</p>
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                 <span className="method-icon">💬</span>
                 <div className="method-details">
                   <h3>WhatsApp Chat</h3>
-                  <a href="https://wa.me/919038976363" className="contact-link" target="_blank" rel="noopener noreferrer">+91 90389 76363</a>
+                  <a href="https://wa.me/917091585737" className="contact-link" target="_blank" rel="noopener noreferrer">+91 70 9158 5737</a>
                   <p>Send a message, share preferences, or request profiles. We respond within minutes.</p>
                 </div>
               </div>
@@ -181,8 +181,8 @@ export default function ContactPage() {
           <h2>Book Your Companion Now</h2>
           <p>Same-day availability across all Mumbai locations. Call or WhatsApp for instant confirmation.</p>
           <div className="contact-buttons">
-            <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call +91 90389 76363</a>
-            <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp Now</a>
+            <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call +91 70 9158 5737</a>
+            <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp Now</a>
           </div>
         </div>
       </section>

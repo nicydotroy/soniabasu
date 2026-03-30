@@ -4,11 +4,11 @@ export default function FloatingButtons() {
       {/* Floating Contact Buttons - RIGHT SIDE (WhatsApp + Telegram) */}
       <div className="floating-buttons-right">
         <a
-          href="https://wa.me/919038976363"
+          href="https://wa.me/917091585737"
           className="floating-btn whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="WhatsApp 919038976363"
+          aria-label="WhatsApp 917091585737"
         >
           <span className="floating-btn-label">WhatsApp Chat</span>
           <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
@@ -32,11 +32,11 @@ export default function FloatingButtons() {
       {/* Floating Contact Buttons - LEFT SIDE (Call) */}
       <div className="floating-buttons-left">
         <a
-          href="tel:+919038976363"
+          href="tel:+917091585737"
           className="floating-btn call-btn-1"
-          aria-label="Call 919038976363"
+          aria-label="Call 917091585737"
         >
-          <span className="floating-btn-label-left">Call 919038976363</span>
+          <span className="floating-btn-label-left">Call 917091585737</span>
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path fill="white" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
           </svg>

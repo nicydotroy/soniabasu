@@ -6,7 +6,7 @@ import { escorts } from "@/data/escorts";
 export const metadata: Metadata = {
   title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
   description:
-    "VVIP Escorts Mumbai — India's most trusted premium companion service since 2018. 500+ verified profiles, VIP escorts, Russian models, independent companions across all Mumbai locations. 100% discreet & safe. Call +91 90389 76363",
+    "VVIP Escorts Mumbai — India's most trusted premium companion service since 2018. 500+ verified profiles, VIP escorts, Russian models, independent companions across all Mumbai locations. 100% discreet & safe. Call +91 70 9158 5737",
   alternates: { canonical: "https://hotzarina.in/" },
   openGraph: {
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: "How do I book a VVIP escort in Mumbai?",
-    a: "Booking is fast and simple. Call or WhatsApp us at +91 90389 76363, browse our verified profiles, choose your preferred companion, confirm your location (incall or outcall), and receive instant confirmation. Our booking team is available 24 hours a day, 7 days a week.",
+    a: "Booking is fast and simple. Call or WhatsApp us at +91 70 9158 5737, browse our verified profiles, choose your preferred companion, confirm your location (incall or outcall), and receive instant confirmation. Our booking team is available 24 hours a day, 7 days a week.",
   },
   {
     q: "Are all escort profiles verified and genuine?",
@@ -137,7 +137,7 @@ const schemaData = {
   image: "https://hotzarina.in/images/logo.png",
   "@id": "https://hotzarina.in",
   url: "https://hotzarina.in",
-  telephone: "+919038976363",
+  telephone: "+917091585737",
   priceRange: "₹₹₹",
   description: "India's premier luxury companion service offering verified VIP escorts, Russian models, and independent companions across Mumbai and 150+ cities.",
   address: {
@@ -203,15 +203,15 @@ export default function HomePage() {
             </p>
             <div className="hero-buttons">
               <a
-                href="tel:+919038976363"
+                href="tel:+917091585737"
                 className="btn btn-primary"
                 aria-label="Call VVIP Escorts Mumbai"
                 style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}
               >
-                📞 Call Now: +91 90389 76363
+                📞 Call Now: +91 70 9158 5737
               </a>
               <a
-                href="https://wa.me/919038976363"
+                href="https://wa.me/917091585737"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -251,7 +251,7 @@ export default function HomePage() {
             Since 2018, <strong style={{ color: "var(--primary-color)" }}>VVIP Escorts Mumbai</strong> has redefined the premium companion experience in India. We combine rigorous verification standards, absolute discretion, and a curated selection of companions to deliver an unmatched, luxury-class service. Every profile is personally vetted. Every booking is handled with total confidentiality. From a solitary evening in South Mumbai to a weekend getaway in Goa — our companions adapt to your lifestyle and your expectations.
           </p>
           <div className="contact-buttons">
-            <a href="tel:+919038976363" className="btn btn-call" aria-label="Call VVIP Escorts Mumbai Now" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+            <a href="tel:+917091585737" className="btn btn-call" aria-label="Call VVIP Escorts Mumbai Now" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
               📞 Book Now — Call or WhatsApp
             </a>
           </div>
@@ -369,7 +369,7 @@ export default function HomePage() {
             </div>
           ))}
           <div className="locations-cta-strip">
-            <p>Don&apos;t see your area? <a href="tel:+919038976363">Call +91 90389 76363</a> — we almost certainly serve it.</p>
+            <p>Don&apos;t see your area? <a href="tel:+917091585737">Call +91 70 9158 5737</a> — we almost certainly serve it.</p>
           </div>
         </div>
       </section>
@@ -437,8 +437,8 @@ export default function HomePage() {
             <h3>Still Have Questions?</h3>
             <p>Our team is available 24/7. Reach us instantly via call or WhatsApp.</p>
             <div className="faq-cta-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call Now</a>
-              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp</a>
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call Now</a>
+              <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp</a>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "VVIP Escorts Locations Mumbai | Navi Mumbai, Thane & Pan-India Service",
   description:
-    "VVIP Escorts serves all Mumbai zones, Navi Mumbai, Thane and 150+ cities across India. Same-day incall & outcall available. Call +91 90389 76363 for your area.",
+    "VVIP Escorts serves all Mumbai zones, Navi Mumbai, Thane and 150+ cities across India. Same-day incall & outcall available. Call +91 70 9158 5737 for your area.",
   alternates: { canonical: "https://hotzarina.in/location" },
 };
 
@@ -50,8 +50,8 @@ export default function LocationPage() {
               Serving all Mumbai zones, Navi Mumbai, Thane, and 150+ cities across India. Incall and outcall available same day.
             </p>
             <div className="hero-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
-                📞 Check Availability: +91 90389 76363
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+                📞 Check Availability: +91 70 9158 5737
               </a>
             </div>
           </div>
@@ -94,8 +94,8 @@ export default function LocationPage() {
           <h2>Not Seeing Your City?</h2>
           <p style={{ color: "#c8b98a", marginBottom: "2rem" }}>We travel. Call our booking team and we&apos;ll confirm companion availability in your location within minutes.</p>
           <div className="contact-buttons">
-            <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call +91 90389 76363</a>
-            <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp</a>
+            <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Call +91 70 9158 5737</a>
+            <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp</a>
           </div>
         </div>
       </section>

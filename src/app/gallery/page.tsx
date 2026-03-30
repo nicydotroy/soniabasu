@@ -40,8 +40,8 @@ export default function GalleryPage() {
               Browse our verified companion categories. Every photo is real, current, and authenticated. No fake profiles. No surprises.
             </p>
             <div className="hero-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
-                📞 Request Profiles: +91 90389 76363
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+                📞 Request Profiles: +91 70 9158 5737
               </a>
             </div>
           </div>
@@ -77,8 +77,8 @@ export default function GalleryPage() {
               To protect the privacy and safety of all our companions, full profile photos are shared exclusively upon direct request. This policy ensures only serious, verified clients make contact — maintaining the trust and security that VVIP Escorts was built on.
             </p>
             <div className="contact-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Request Profiles — Call Now</a>
-              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp for Profiles</a>
+              <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Request Profiles — Call Now</a>
+              <a href="https://wa.me/917091585737" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp for Profiles</a>
             </div>
           </div>
         </div>
