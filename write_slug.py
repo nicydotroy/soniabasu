@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+content = r"""import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -356,3 +356,8 @@ export default async function SlugPage({ params }: Props) {
     </>
   );
 }
+"""
+
+with open("src/app/[slug]/page.tsx", "w") as f:
+    f.write(content)
+print("done")
