@@ -16,12 +16,12 @@ export default function Footer() {
                 height={70}
                 loading="lazy"
               />
-              <p>Zarina Escorts Mumbai - Premium call girls service available 24/7. Verified profiles, VIP escorts, Russian models, independent companions. Safe, discreet booking across all Mumbai locations.</p>
+              <p>VVIP Escorts Mumbai — India&apos;s most trusted luxury companion service. 500+ verified profiles including VIP, Russian, Model, and independent companions. Discreet booking available 24/7 across all Mumbai locations and 150+ cities nationwide.</p>
             </div>
             <div className="footer-contact">
               <h4>Call Escorts in Mumbai 24/7</h4>
-              <a href="tel:+919038976363" aria-label="Call Zarina Escorts Mumbai">📞 +91 90389 76363</a>
-              <a href="https://wa.me/919038976363" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Zarina Escorts">💬 WhatsApp</a>
+              <a href="tel:+919038976363" aria-label="Call VVIP Escorts Mumbai">📞 +91 90389 76363</a>
+              <a href="https://wa.me/919038976363" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp VVIP Escorts">💬 WhatsApp</a>
             </div>
           </div>
           <div className="footer-column">

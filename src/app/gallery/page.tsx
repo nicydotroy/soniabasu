@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Gallery | Zarina Escorts Mumbai - Real Photos of Call Girls",
+  title: "VVIP Escorts Gallery Mumbai | Verified Companion Profiles",
   description:
-    "View our gallery of premium Mumbai escorts. 100% genuine and verified photos of our call girls. Real profiles, real beauty. Browse now.",
+    "Browse VVIP Escorts Mumbai's verified companion gallery. 500+ genuine profiles across VIP, Russian, Model, Independent and specialist categories. All photos real-time verified. No fake profiles.",
   alternates: { canonical: "https://hotzarina.in/gallery" },
 };
 
 const categories = [
-  { icon: "👑", title: "VIP Escorts", desc: "High-profile VIP companions", href: "/vip-escorts" },
-  { icon: "🌟", title: "Russian Models", desc: "Exotic European beauties", href: "/russian-escorts" },
-  { icon: "💎", title: "Independent Escorts", desc: "Self-managed professionals", href: "/independent-escorts" },
-  { icon: "👗", title: "Fashion Models", desc: "Runway-ready companions", href: "/model-escorts" },
-  { icon: "🎓", title: "College Girls", desc: "Young & energetic", href: "/college-girls-escorts" },
-  { icon: "⭐", title: "Celebrity Escorts", desc: "Glamorous companions", href: "/celebrity-escorts" },
+  { icon: "👑", title: "VIP & High-Profile", desc: "Sophisticated, educated, and immaculately presented companions for elite clientele.", href: "/vip-escorts" },
+  { icon: "🌟", title: "Russian & European Models", desc: "Authentic European beauty with multilingual communication and international etiquette.", href: "/russian-escorts" },
+  { icon: "💎", title: "Independent Escorts", desc: "Self-managed, genuine companions with direct communication and personal authenticity.", href: "/independent-escorts" },
+  { icon: "👗", title: "Fashion & Model Escorts", desc: "Runway-trained, professionally styled companions for events and private engagements.", href: "/model-escorts" },
+  { icon: "🎓", title: "College Companions", desc: "Young, vibrant, and open-minded companions aged 18–24 across Mumbai.", href: "/college-girls-escorts" },
+  { icon: "⭐", title: "Celebrity & Glamour", desc: "Bollywood-inspired glamour companions for premium and extraordinary experiences.", href: "/celebrity-escorts" },
 ];
 
 export default function GalleryPage() {
@@ -24,26 +23,36 @@ export default function GalleryPage() {
       <section
         className="hero"
         style={{
-          background:
-            "linear-gradient(rgba(128,0,128,0.7),rgba(128,0,128,0.7)), url('/images/escorts-in-mumbai-banner.webp') center/cover no-repeat",
+          background: "linear-gradient(135deg, rgba(10,10,5,0.88) 0%, rgba(26,21,6,0.82) 100%), url('/images/escorts-in-mumbai-banner.webp') center/cover no-repeat",
+          minHeight: "50vh",
+          display: "flex",
+          alignItems: "center",
         }}
+        aria-label="VVIP Escorts Mumbai Gallery"
       >
-        <div className="container">
+        <div className="container" style={{ width: "100%" }}>
           <div className="hero-content">
-            <h1>Gallery - Premium Mumbai Escorts Collection</h1>
-            <p>Browse our verified escort profiles. All photos are 100% genuine and verified. Real beauty, real service.</p>
+            <p style={{ color: "var(--primary-color)", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", fontSize: "0.9rem", marginBottom: "1rem" }}>
+              ✦ 500+ Verified Profiles
+            </p>
+            <h1>VVIP Escorts Gallery — Mumbai</h1>
+            <p style={{ color: "#e0d4b0", maxWidth: "540px", margin: "0 auto 1.5rem" }}>
+              Browse our verified companion categories. Every photo is real, current, and authenticated. No fake profiles. No surprises.
+            </p>
             <div className="hero-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary">📞 Call us at +91 90389 76363</a>
+              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+                📞 Request Profiles: +91 90389 76363
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="gallery-section">
+      <section className="gallery-section" style={{ background: "#0a0a05" }} aria-label="Companion Category Gallery">
         <div className="container">
           <div className="gallery-intro">
-            <h2>Our Verified Escort Categories</h2>
-            <p>Authentic photos of Mumbai&apos;s finest escorts. No fake profiles, no stolen pictures — guaranteed.</p>
+            <h2>Browse Our Verified Companion Categories</h2>
+            <p>All profiles are authenticated in real time. What you see is exactly who you meet — guaranteed by the VVIP verification standard.</p>
           </div>
           <div className="gallery-grid">
             {categories.map((cat) => (
@@ -57,20 +66,19 @@ export default function GalleryPage() {
                 <div className="gallery-info">
                   <h3>{cat.title}</h3>
                   <p>{cat.desc}</p>
-                  <Link href={cat.href} className="gallery-btn">View Gallery</Link>
+                  <Link href={cat.href} className="gallery-btn" aria-label={`View ${cat.title} Gallery`}>View Profiles</Link>
                 </div>
               </div>
             ))}
           </div>
           <div className="gallery-note">
-            <h3>🔒 Privacy &amp; Discretion Guaranteed</h3>
+            <h3>✦ Privacy-First Photo Policy</h3>
             <p>
-              All escort photos shared only upon direct request for privacy protection.
-              We maintain 100% confidentiality for both our escorts and clients.
+              To protect the privacy and safety of all our companions, full profile photos are shared exclusively upon direct request. This policy ensures only serious, verified clients make contact — maintaining the trust and security that VVIP Escorts was built on.
             </p>
             <div className="contact-buttons">
-              <a href="tel:+919038976363" className="btn btn-primary">📞 Request Photos - Call Now</a>
-              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">💬 WhatsApp for Photos</a>
+              <a href="tel:+919038976363" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Request Profiles — Call Now</a>
+              <a href="https://wa.me/919038976363" className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}>💬 WhatsApp for Profiles</a>
             </div>
           </div>
         </div>

@@ -15,12 +15,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hotzarina.in"),
-  title: "Escorts in Mumbai | Premium Call Girls Service 24/7 | Zarina",
+  title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
   description:
-    "Top Escorts in Mumbai - 100% Verified Call Girls Available 24/7. VIP Escorts, Russian Models, Independent Companions. Safe, Discreet Booking. Call Now +91 90389 76363",
+    "VVIP Escorts Mumbai — India's most trusted premium companion service. 500+ verified profiles: VIP, Russian, Model, Independent & more. Available 24/7. Call +91 90389 76363",
   keywords:
-    "escorts in mumbai, mumbai escorts, call girls in mumbai, mumbai call girls, vip escorts mumbai",
-  authors: [{ name: "Zarina Escorts" }],
+    "vvip escorts mumbai, escorts in mumbai, mumbai escorts, premium call girls mumbai, vip escorts mumbai, verified escorts mumbai",
+  authors: [{ name: "VVIP Escorts" }],
   robots:
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   other: { rating: "adult", "revisit-after": "1 days" },
