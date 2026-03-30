@@ -111,14 +111,14 @@ const locationGroups = [
 ];
 
 const serviceLinks = [
-  { href: "/vip-escorts", label: "VIP Escorts", icon: "👑" },
-  { href: "/russian-escorts", label: "Russian Escorts", icon: "🌟" },
-  { href: "/independent-escorts", label: "Independent Escorts", icon: "💎" },
-  { href: "/model-escorts", label: "Model Escorts", icon: "👗" },
-  { href: "/college-girls-escorts", label: "College Girls", icon: "🎓" },
-  { href: "/celebrity-escorts", label: "Celebrity Escorts", icon: "⭐" },
-  { href: "/air-hostess-escorts", label: "Air Hostess", icon: "✈️" },
-  { href: "/high-profile-escorts", label: "High Profile", icon: "💼" },
+  { href: "/vip-escorts",           label: "VIP Escorts",         icon: "👑", tag: "Most Booked", color: "#d4af37", desc: "Elite, educated companions for corporate events, luxury travel & private evenings.", stats: ["500+ Profiles", "5★ Rated", "24/7"] },
+  { href: "/russian-escorts",       label: "Russian Models",      icon: "🌍", tag: "International", color: "#c9a84c", desc: "Authentic European beauty with multilingual social grace & global sophistication.", stats: ["Verified", "Multilingual", "Exclusive"] },
+  { href: "/independent-escorts",   label: "Independent",         icon: "💎", tag: "Authentic", color: "#b8962e", desc: "Self-managed, genuine profiles — direct communication, real photos guaranteed.", stats: ["Real Photos", "Direct Contact", "Flexible"] },
+  { href: "/model-escorts",         label: "Fashion Models",      icon: "👗", tag: "Glamour", color: "#d4af37", desc: "Runway-trained professionals presentable at any black-tie event or private venue.", stats: ["Runway Ready", "Styled", "Premium"] },
+  { href: "/college-girls-escorts", label: "College Girls",       icon: "🎓", tag: "Fresh & Fun", color: "#c9a84c", desc: "Young, energetic companions aged 18–24 — open-minded and genuinely entertaining.", stats: ["Age 18–24", "Vibrant", "All Zones"] },
+  { href: "/celebrity-escorts",     label: "Celebrity Look-alikes", icon: "⭐", tag: "Extraordinary", color: "#b8962e", desc: "Bollywood-inspired glamour companions for clients who demand the extraordinary.", stats: ["Bollywood Style", "Top Tier", "Premium"] },
+  { href: "/air-hostess-escorts",   label: "Air Hostess",         icon: "✈️", tag: "Polished", color: "#d4af37", desc: "Aviation-trained poise, impeccable presentation, and outstanding service etiquette.", stats: ["Groomed", "Travel-Ready", "Uniform Available"] },
+  { href: "/high-profile-escorts",  label: "High Profile",        icon: "💼", tag: "Elite",  color: "#c9a84c", desc: "Discreet, articulate companions for high-stakes social and corporate environments.", stats: ["Corporate", "Discreet", "VIP Only"] },
 ];
 
 const trustPoints = [
@@ -312,23 +312,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Services */}
-      <section className="home-services-section" aria-label="Escort Service Categories" style={{ background: "#0a0a05" }}>
+      {/* Our Services — Creative Showcase */}
+      <section className="services-showcase-section" aria-label="VVIP Escort Service Categories">
         <div className="container">
-          <h2>Our Premium Escort Services in Mumbai</h2>
-          <p className="section-subtitle">
-            From VIP and high-profile to regional and niche companions — every category is verified, professional, and curated for your satisfaction.
-          </p>
-          <div className="escorts-grid">
-            {serviceLinks.map((s) => (
-              <div className="escort-card" key={s.href} style={{ textAlign: "center" }}>
-                <div className="escort-info" style={{ padding: "2.5rem 1.5rem" }}>
-                  <div style={{ fontSize: "3rem", margin: "0.5rem 0 1rem" }}>{s.icon}</div>
-                  <h3 style={{ marginBottom: "1rem" }}>{s.label}</h3>
-                  <Link href={s.href} className="btn-contact" aria-label={`View ${s.label} in Mumbai`}>Explore</Link>
+          <div className="showcase-header">
+            <span className="showcase-kicker">✦ What We Offer</span>
+            <h2>8 Premium Companion Categories</h2>
+            <p>Handpicked, verified, and held to the VVIP standard. Choose your experience.</p>
+          </div>
+          <div className="showcase-grid">
+            {serviceLinks.map((s, i) => (
+              <Link href={s.href} key={s.href} className="showcase-card" aria-label={`View ${s.label}`}
+                style={{ "--card-accent": s.color } as React.CSSProperties}>
+                <div className="showcase-card-inner">
+                  <span className="showcase-tag">{s.tag}</span>
+                  <div className="showcase-icon">{s.icon}</div>
+                  <h3 className="showcase-title">{s.label}</h3>
+                  <p className="showcase-desc">{s.desc}</p>
+                  <div className="showcase-stats">
+                    {s.stats.map((st) => <span key={st} className="showcase-stat-pill">{st}</span>)}
+                  </div>
+                  <div className="showcase-cta">View Category <span>→</span></div>
                 </div>
-              </div>
+                <div className="showcase-card-glow" />
+              </Link>
             ))}
+          </div>
+          <div className="showcase-footer-strip">
+            <a href="/services">View All Services &amp; Booking Details →</a>
           </div>
         </div>
       </section>
