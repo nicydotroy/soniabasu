@@ -9,11 +9,11 @@ export default function Footer() {
           <div className="footer-column">
             <div className="footer-logo">
               <Image
-                src="/images/logo.webp"
-                alt="Zarina Escorts Mumbai Logo - Premium Call Girls Service"
+                src="/images/logo.png"
+                alt="VVIP Escorts Logo - Premium Call Girls Service"
                 className="footer-logo-img"
-                width={180}
-                height={60}
+                width={200}
+                height={70}
                 loading="lazy"
               />
               <p>Zarina Escorts Mumbai - Premium call girls service available 24/7. Verified profiles, VIP escorts, Russian models, independent companions. Safe, discreet booking across all Mumbai locations.</p>
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>Copyright © 2026 Zarina Escorts Mumbai. All rights reserved | Premium Call Girls Service 24/7 | <Link href="/" style={{ color: '#ba55d3' }}>Escorts in Mumbai</Link></p>
+          <p>Copyright © 2026 VVIP Escorts. All rights reserved | Premium Call Girls Service 24/7 | <Link href="/" style={{ color: '#c9a84c' }}>Escorts in Mumbai</Link></p>
         </div>
       </div>
     </footer>

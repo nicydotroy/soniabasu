@@ -16,10 +16,10 @@ export default function Header() {
           <div className="logo">
             <Link href="/">
               <Image
-                src="/images/logo.webp"
-                alt="Zarina Escorts in Mumbai - Premium Call Girls Service"
-                width={180}
-                height={60}
+                src="/images/logo.png"
+                alt="VVIP Escorts - Premium Call Girls Service"
+                width={200}
+                height={70}
                 priority
               />
             </Link>
