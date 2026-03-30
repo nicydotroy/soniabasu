@@ -34,20 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <head>
-        <link rel="icon" type="image/webp" href="/images/favicon.webp" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/images/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/images/favicon-16x16.png"
-        />
-        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
         <meta name="geo.region" content="IN-MH" />
         <meta name="geo.placename" content="Mumbai" />
         <meta name="mobile-web-app-capable" content="yes" />
