@@ -69,19 +69,45 @@ const faqItems = [
   },
 ];
 
-const locationLinks = [
-  { href: "/escorts-in-andheri", label: "Andheri" },
-  { href: "/escorts-in-bandra", label: "Bandra" },
-  { href: "/escorts-in-juhu", label: "Juhu" },
-  { href: "/escorts-in-colaba", label: "Colaba" },
-  { href: "/escorts-in-powai", label: "Powai" },
-  { href: "/escorts-in-worli", label: "Worli" },
-  { href: "/escorts-in-lower-parel", label: "Lower Parel" },
-  { href: "/escorts-in-thane", label: "Thane" },
-  { href: "/escorts-in-navi-mumbai", label: "Navi Mumbai" },
-  { href: "/escorts-in-dadar", label: "Dadar" },
-  { href: "/escorts-in-malad", label: "Malad" },
-  { href: "/escorts-in-kandivali", label: "Kandivali" },
+function toLabel(slug: string) {
+  return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
+function loc(slug: string) { return { href: `/escorts-in-${slug}`, name: toLabel(slug) }; }
+
+const locationGroups = [
+  {
+    icon: "🏙️",
+    label: "Mumbai City Zones",
+    locations: [
+      "andheri","bandra","borivali","byculla","charni-road","chembur","chinchpokli","churchgate",
+      "colaba","cst","dadar","fort","ghatkopar","goregaon","govandi","grant-road","jogeshwari",
+      "juhu","kandivali","kanjurmarg","khar","khar-road","kurla","lokhandwala","lower-parel",
+      "mahalaxmi","mahim","malad","mankhurd","marine-lines","masjid-bandar","matunga",
+      "mumbai-airport","mumbai-central","nahur","nariman-point","parel","powai","prabhadevi",
+      "sakinaka","santacruz","sion","versova","vidyavihar","vikhroli","vile-parle","wadala","worli",
+    ].map(loc),
+  },
+  {
+    icon: "🌆",
+    label: "Navi Mumbai, Thane & MMR",
+    locations: [
+      "navi-mumbai","thane","vashi","belapur","nerul","airoli","ghansoli","kopar-khairane","rabale",
+      "sanpada","panvel","kharghar","kalamboli","kamothe","ulwe","seawood","diva","dombivli","kalyan",
+      "ambernath","titwala","karjat","kasara","neral","asangaon","khopoli","thakurli","kalwa",
+      "ambivali","badlapur","boisar","naigaon","nalasopara","vasai","virar","palghar","saphale",
+      "mira-road","bhayandar","bhiwandi","ulhasnagar","mumbra","juinagar",
+    ].map(loc),
+  },
+  {
+    icon: "✈️",
+    label: "Pan-India — Major Cities",
+    locations: [
+      "delhi","goa","pune","bangalore","hyderabad","chandigarh","jaipur","gurgaon","noida","kolkata",
+      "chennai","ahmedabad","surat","nagpur","nashik","indore","bhopal","lucknow","kanpur","patna",
+      "agra","varanasi","ranchi","guwahati","bhubaneswar","kochi","mysore","coimbatore","mangalore",
+      "vijayawada","visakhapatnam","rajkot","jodhpur","udaipur","dehradun","ludhiana","jalandhar","siliguri","gwalior",
+    ].map(loc),
+  },
 ];
 
 const serviceLinks = [
@@ -307,22 +333,32 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Locations */}
-      <section className="home-locations-section" aria-label="Mumbai Escort Locations" style={{ background: "#0f0e08" }}>
+      {/* Locations — Creative Pill Cloud */}
+      <section className="locations-cloud-section" aria-label="VVIP Escorts India Coverage">
         <div className="container">
-          <h2>Available Across All Mumbai Locations</h2>
-          <p className="section-subtitle">
-            Same-day service in every major Mumbai neighbourhood. Discreet, prompt, and professional wherever you are.
-          </p>
-          <div className="escorts-grid">
-            {locationLinks.map((loc) => (
-              <div className="location-card" key={loc.href}>
-                <div className="location-info">
-                  <h3>{loc.label}</h3>
-                  <Link href={loc.href} className="btn-location" aria-label={`Escorts in ${loc.label}`}>View Escorts</Link>
-                </div>
+          <div className="locations-cloud-header">
+            <span className="locations-kicker">✦ Pan-India Coverage</span>
+            <h2>Escorts Available in 130+ Cities Across India</h2>
+            <p>Mumbai to Delhi, Goa to Bangalore — your VVIP companion is closer than you think. Same-day booking in every city listed below.</p>
+          </div>
+          {locationGroups.map((group) => (
+            <div className="location-group-block" key={group.label}>
+              <div className="location-group-label">
+                <span className="group-icon">{group.icon}</span>
+                <h3>{group.label}</h3>
+                <div className="label-line" />
               </div>
-            ))}
+              <div className="location-pills-wrap">
+                {group.locations.map((l) => (
+                  <Link key={l.href} href={l.href} className="location-pill" aria-label={`Escorts in ${l.name}`}>
+                    {l.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+          <div className="locations-cta-strip">
+            <p>Don&apos;t see your area? <a href="tel:+919038976363">Call +91 90389 76363</a> — we almost certainly serve it.</p>
           </div>
         </div>
       </section>
