@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "VVIP Escorts Gallery Mumbai | Verified Companion Profiles",
   description:
     "Browse VVIP Escorts Mumbai's verified companion gallery. 500+ genuine profiles across VIP, Russian, Model, Independent and specialist categories. All photos real-time verified. No fake profiles.",
-  alternates: { canonical: "https://hotzarina.in/gallery" },
+  alternates: { canonical: "https://vvip-escorts.com/gallery" },
 };
 
 const categories = [

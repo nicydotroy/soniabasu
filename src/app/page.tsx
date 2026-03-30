@@ -7,14 +7,14 @@ export const metadata: Metadata = {
   title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
   description:
     "VVIP Escorts Mumbai — India's most trusted premium companion service since 2018. 500+ verified profiles, VIP escorts, Russian models, independent companions across all Mumbai locations. 100% discreet & safe. Call +91 70 9158 5737",
-  alternates: { canonical: "https://hotzarina.in/" },
+  alternates: { canonical: "https://vvip-escorts.com/" },
   openGraph: {
     type: "website",
-    url: "https://hotzarina.in/",
+    url: "https://vvip-escorts.com/",
     title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
     description:
       "India's most trusted premium companion service. 500+ verified profiles. VIP, Russian, Model & Independent escorts across all Mumbai locations. Available 24/7.",
-    images: [{ url: "https://hotzarina.in/images/escorts-in-mumbai-banner.webp" }],
+    images: [{ url: "https://vvip-escorts.com/images/escorts-in-mumbai-banner.webp" }],
   },
 };
 
@@ -134,9 +134,9 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "VVIP Escorts Mumbai",
-  image: "https://hotzarina.in/images/logo.png",
-  "@id": "https://hotzarina.in",
-  url: "https://hotzarina.in",
+  image: "https://vvip-escorts.com/images/logo.png",
+  "@id": "https://vvip-escorts.com",
+  url: "https://vvip-escorts.com",
   telephone: "+917091585737",
   priceRange: "₹₹₹",
   description: "India's premier luxury companion service offering verified VIP escorts, Russian models, and independent companions across Mumbai and 150+ cities.",

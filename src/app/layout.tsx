@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hotzarina.in"),
+  metadataBase: new URL("https://vvip-escorts.com"),
   title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
   description:
     "VVIP Escorts Mumbai — India's most trusted premium companion service. 500+ verified profiles: VIP, Russian, Model, Independent & more. Available 24/7. Call +91 70 9158 5737",

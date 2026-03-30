@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: page.title,
     description: page.description,
     keywords: page.keywords,
-    alternates: { canonical: `https://hotzarina.in/${slug}` },
+    alternates: { canonical: `https://vvip-escorts.com/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://hotzarina.in/${slug}`,
+      url: `https://vvip-escorts.com/${slug}`,
       title: page.title,
       description: page.description,
       images: page.ogImage ? [{ url: page.ogImage }] : [],
@@ -115,9 +115,9 @@ export default async function SlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: page.schemaName ?? `Zarina Escorts ${locationName}`,
-    image: "https://hotzarina.in/images/logo.webp",
-    "@id": `https://hotzarina.in/${slug}`,
-    url: `https://hotzarina.in/${slug}`,
+    image: "https://vvip-escorts.com/images/logo.webp",
+    "@id": `https://vvip-escorts.com/${slug}`,
+    url: `https://vvip-escorts.com/${slug}`,
     telephone: "+919038976363",
     priceRange: "₹₹₹",
     address: {
@@ -150,12 +150,12 @@ export default async function SlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://hotzarina.in/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://vvip-escorts.com/" },
       {
         "@type": "ListItem",
         position: 2,
         name: page.heroTitle,
-        item: `https://hotzarina.in/${slug}`,
+        item: `https://vvip-escorts.com/${slug}`,
       },
     ],
   };

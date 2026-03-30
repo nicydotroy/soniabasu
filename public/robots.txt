@@ -1,15 +1,15 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-# Sitemap location
-Sitemap: https://hotzarina.in/sitemap.xml
+# Sitemap
+Sitemap: https://vvip-escorts.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
 
-# Google bots
+# Google
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -17,7 +17,17 @@ Crawl-delay: 1
 User-agent: Googlebot-Image
 Allow: /images/
 
-# Bing bots
+# Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+
+# Common bots
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /

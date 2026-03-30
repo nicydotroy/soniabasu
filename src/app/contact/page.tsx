@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Contact VVIP Escorts Mumbai | 24/7 Booking Hotline",
   description:
     "Contact VVIP Escorts Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 70 9158 5737 for instant confirmation. Discreet, professional response guaranteed.",
-  alternates: { canonical: "https://hotzarina.in/contact" },
+  alternates: { canonical: "https://vvip-escorts.com/contact" },
 };
 
 export default function ContactPage() {

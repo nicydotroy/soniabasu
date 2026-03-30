@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "VVIP Escorts Locations Mumbai | Navi Mumbai, Thane & Pan-India Service",
   description:
     "VVIP Escorts serves all Mumbai zones, Navi Mumbai, Thane and 150+ cities across India. Same-day incall & outcall available. Call +91 70 9158 5737 for your area.",
-  alternates: { canonical: "https://hotzarina.in/location" },
+  alternates: { canonical: "https://vvip-escorts.com/location" },
 };
 
 const mumbaiAreas = [
