@@ -18,9 +18,10 @@ export default function Header() {
               <Image
                 src="/images/logo.png"
                 alt="VVIP Escorts - Premium Call Girls Service"
-                width={200}
-                height={70}
+                width={320}
+                height={110}
                 priority
+                style={{ height: '90px', width: 'auto' }}
               />
             </Link>
           </div>
