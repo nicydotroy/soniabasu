@@ -27,8 +27,7 @@ export function GET() {
     status: 200,
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'no-cache, no-store, must-revalidate',
-      'X-Robots-Tag': 'noindex',
+      'Cache-Control': 'public, max-age=3600',
     },
   });
 }
