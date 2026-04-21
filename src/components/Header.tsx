@@ -26,7 +26,7 @@ export default function Header() {
             </Link>
           </div>
           <ul className={`nav-menu${menuOpen ? ' active' : ''}`}>
-            <li><Link href="/" onClick={closeMenu}>Escorts in Mumbai</Link></li>
+            <li><a href="https://saumyabasu.in/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Escorts in Mumbai</a></li>
             <li><Link href="/services" onClick={closeMenu}>Services</Link></li>
             <li><Link href="/location" onClick={closeMenu}>Location</Link></li>
             <li><Link href="/gallery" onClick={closeMenu}>Gallery</Link></li>
