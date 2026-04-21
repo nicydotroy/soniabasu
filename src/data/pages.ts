@@ -42,7 +42,7 @@ function makeLocationPage(location: string): PageData {
     intro: `Premium <strong>escorts in ${name}</strong> available 24/7. We provide verified companions in ${name} with 24/7 availability for incall and outcall services. Also serving <a href="/" style="color:#c9a84c;text-decoration:none;border-bottom:2px solid #c9a84c;">Mumbai escorts</a> and other major areas.`,
     h2Escorts: `Best Escorts in ${name} - Verified Profiles`,
     subtitleEscorts: `Premium ${name} call girls, VIP escorts, and independent companions with verified profiles. Available 24/7 for outcall and incall services.`,
-    ogImage: `https://soniabasu.com/images/escorts/${slug}.webp`,
+    ogImage: `https://soniabasu.vercel.app/images/escorts/${slug}.webp`,
     schemaName: `Sonia Basu ${name}`,
     schemaReviewCount: Math.floor(100 + Math.random() * 300),
   };
@@ -62,7 +62,7 @@ function makeCategoryPage(cat: string, customData?: Partial<PageData>): PageData
     intro: `Premium <strong>${name.toLowerCase()}</strong> available 24/7 in Mumbai. We provide verified companions with 24/7 availability for incall and outcall services.`,
     h2Escorts: `Best ${name} - Verified Profiles`,
     subtitleEscorts: `Premium ${name.toLowerCase()}, VIP escorts, and independent companions with verified profiles. Available 24/7 across all Mumbai areas.`,
-    ogImage: `https://soniabasu.com/images/hero-banner.webp`,
+    ogImage: `https://soniabasu.vercel.app/images/hero-banner.webp`,
     schemaName: `Sonia Basu Mumbai`,
     schemaLat: 19.076,
     schemaLng: 72.8777,

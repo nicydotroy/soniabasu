@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "VVIP Escort Services Mumbai | VIP, Russian, Model, Independent 24/7",
   description:
     "Explore Sonia Basu Mumbai's premium service menu: VIP high-profile escorts, Russian & European models, independent companions, college girls, air hostess, housewife escorts and more. All verified. Available 24/7.",
-  alternates: { canonical: "https://soniabasu.com/services" },
+  alternates: { canonical: "https://soniabasu.vercel.app/services" },
 };
 
 const services = [

@@ -7,14 +7,14 @@ export const metadata: Metadata = {
   title: "Sonia Basu Mumbai | India's #1 Premium Companion Service 24/7",
   description:
     "Sonia Basu Mumbai — India's most trusted premium companion service since 2018. 500+ verified profiles, VIP escorts, Russian models, independent companions across all Mumbai locations. 100% discreet & safe. Call +91 70 9158 5737",
-  alternates: { canonical: "https://soniabasu.com/" },
+  alternates: { canonical: "https://soniabasu.vercel.app/" },
   openGraph: {
     type: "website",
-    url: "https://soniabasu.com/",
+    url: "https://soniabasu.vercel.app/",
     title: "Sonia Basu Mumbai | India's #1 Premium Companion Service 24/7",
     description:
       "India's most trusted premium companion service. 500+ verified profiles. VIP, Russian, Model & Independent escorts across all Mumbai locations. Available 24/7.",
-    images: [{ url: "https://soniabasu.com/images/escorts-in-mumbai-banner.webp" }],
+    images: [{ url: "https://soniabasu.vercel.app/images/escorts-in-mumbai-banner.webp" }],
   },
 };
 
@@ -134,9 +134,9 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Sonia Basu Mumbai",
-  image: "https://soniabasu.com/images/logo.png",
-  "@id": "https://soniabasu.com",
-  url: "https://soniabasu.com",
+  image: "https://soniabasu.vercel.app/images/logo.png",
+  "@id": "https://soniabasu.vercel.app",
+  url: "https://soniabasu.vercel.app",
   telephone: "+917091585737",
   priceRange: "₹₹₹",
   description: "India's premier luxury companion service offering verified VIP escorts, Russian models, and independent companions across Mumbai and 150+ cities.",

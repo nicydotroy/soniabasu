@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: page.title,
     description: page.description,
     keywords: page.keywords,
-    alternates: { canonical: `https://soniabasu.com/${slug}` },
+    alternates: { canonical: `https://soniabasu.vercel.app/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://soniabasu.com/${slug}`,
+      url: `https://soniabasu.vercel.app/${slug}`,
       title: page.title,
       description: page.description,
       images: page.ogImage ? [{ url: page.ogImage }] : [],
@@ -115,9 +115,9 @@ export default async function SlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: page.schemaName ?? `Sonia Basu ${locationName}`,
-    image: "https://soniabasu.com/images/logo.png",
-    "@id": `https://soniabasu.com/${slug}`,
-    url: `https://soniabasu.com/${slug}`,
+    image: "https://soniabasu.vercel.app/images/logo.png",
+    "@id": `https://soniabasu.vercel.app/${slug}`,
+    url: `https://soniabasu.vercel.app/${slug}`,
     telephone: "+917091585737",
     priceRange: "₹₹₹",
     description: page.description,
@@ -151,8 +151,8 @@ export default async function SlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://soniabasu.com/" },
-      { "@type": "ListItem", position: 2, name: page.heroTitle, item: `https://soniabasu.com/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://soniabasu.vercel.app/" },
+      { "@type": "ListItem", position: 2, name: page.heroTitle, item: `https://soniabasu.vercel.app/${slug}` },
     ],
   };
 

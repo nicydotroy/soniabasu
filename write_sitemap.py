@@ -30,7 +30,7 @@ category_slugs = [
     'unsatisfied-bhabhi','unsatisfied-female','vip-escorts',
 ]
 
-BASE = "https://soniabasu.com"
+BASE = "https://soniabasu.vercel.app"
 
 def url(loc, changefreq="weekly", priority="0.8"):
     return f"""  <url>

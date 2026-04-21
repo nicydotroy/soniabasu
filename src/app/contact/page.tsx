@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Contact Sonia Basu Mumbai | 24/7 Booking Hotline",
   description:
     "Contact Sonia Basu Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 70 9158 5737 for instant confirmation. Discreet, professional response guaranteed.",
-  alternates: { canonical: "https://soniabasu.com/contact" },
+  alternates: { canonical: "https://soniabasu.vercel.app/contact" },
 };
 
 export default function ContactPage() {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Sonia Basu Locations Mumbai | Navi Mumbai, Thane & Pan-India Service",
   description:
     "Sonia Basu serves all Mumbai zones, Navi Mumbai, Thane and 150+ cities across India. Same-day incall & outcall available. Call +91 70 9158 5737 for your area.",
-  alternates: { canonical: "https://soniabasu.com/location" },
+  alternates: { canonical: "https://soniabasu.vercel.app/location" },
 };
 
 const mumbaiAreas = [
