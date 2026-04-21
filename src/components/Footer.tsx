@@ -101,7 +101,7 @@ export default function Footer() {
               <Link href="/" aria-label="Sonia Basu Mumbai Home">
                 <Image
                   src="/images/logo.png"
-                  alt="Sonia Basu Mumbai — Premium Companion Service"
+                  alt="Sonia Basu — Premium Companion Service"
                   className="footer-logo-img"
                   width={180}
                   height={62}
