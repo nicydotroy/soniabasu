@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <head>
-        <meta name="google-site-verification" content="jSSjl0DdzHsojVwxyLrovMHKJSHFR-w-wp_0km2FypM" />
+        <meta name="google-site-verification" content="nOSn1Xlk8u6KaPfk1WX5wsWlixaet3Dytj386tmy_4Y" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <link rel="shortcut icon" type="image/png" href="/images/favicon-32x32.png" />
