@@ -98,10 +98,10 @@ export default function Footer() {
 
             {/* Brand Column */}
             <div className="footer-brand-col">
-              <Link href="/" aria-label="VVIP Escorts Mumbai Home">
+              <Link href="/" aria-label="Sonia Basu Mumbai Home">
                 <Image
                   src="/images/logo.png"
-                  alt="VVIP Escorts Mumbai — Premium Companion Service"
+                  alt="Sonia Basu Mumbai — Premium Companion Service"
                   className="footer-logo-img"
                   width={180}
                   height={62}
@@ -112,15 +112,15 @@ export default function Footer() {
                 India&apos;s most trusted luxury companion service since 2018. Rigorous verification, complete discretion, and 500+ genuine profiles across Mumbai and 150+ cities.
               </p>
               <div className="footer-social-row">
-                <a href="tel:+917091585737" className="footer-social-btn" aria-label="Call VVIP Escorts">
+                <a href="tel:+917091585737" className="footer-social-btn" aria-label="Call Sonia Basu">
                   <span>📞</span>
                   <span className="fsb-label">Call</span>
                 </a>
-                <a href="https://wa.me/917091585737" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="WhatsApp VVIP Escorts">
+                <a href="https://wa.me/917091585737" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="WhatsApp Sonia Basu">
                   <span>💬</span>
                   <span className="fsb-label">WhatsApp</span>
                 </a>
-                <a href="https://t.me/+917091585737" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="Telegram VVIP Escorts">
+                <a href="https://t.me/+917091585737" target="_blank" rel="noopener noreferrer" className="footer-social-btn" aria-label="Telegram Sonia Basu">
                   <span>✈️</span>
                   <span className="fsb-label">Telegram</span>
                 </a>
@@ -207,7 +207,7 @@ export default function Footer() {
         <div className="container">
           <div className="footer-bottom-inner">
             <p className="footer-copyright">
-              © 2026 <Link href="/">VVIP Escorts Mumbai</Link>. All rights reserved.&nbsp;
+              © 2026 <Link href="/">Sonia Basu Mumbai</Link>. All rights reserved.&nbsp;
               <span className="fbb-sep">|</span>&nbsp;
               <Link href="/escorts-in-mumbai">Escorts in Mumbai</Link>&nbsp;
               <span className="fbb-sep">|</span>&nbsp;

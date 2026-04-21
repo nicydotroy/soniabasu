@@ -17,7 +17,7 @@ export default function Header() {
             <Link href="/">
               <Image
                 src="/images/logo.png"
-                alt="VVIP Escorts - Premium Call Girls Service"
+                alt="Sonia Basu - Premium Call Girls Service"
                 width={320}
                 height={110}
                 priority

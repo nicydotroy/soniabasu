@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: page.title,
     description: page.description,
     keywords: page.keywords,
-    alternates: { canonical: `https://vvip-escorts.com/${slug}` },
+    alternates: { canonical: `https://soniabasu.com/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://vvip-escorts.com/${slug}`,
+      url: `https://soniabasu.com/${slug}`,
       title: page.title,
       description: page.description,
       images: page.ogImage ? [{ url: page.ogImage }] : [],
@@ -47,7 +47,7 @@ const faqItems = [
   {
     q: (loc: string) => `Are all escort profiles in ${loc} verified and genuine?`,
     a: (_: string) =>
-      `Absolutely. Every companion on VVIP Escorts undergoes a strict 3-step verification: government-issued photo ID check, real-time photo confirmation, and a personal background review. We re-verify all active profiles every 90 days. No fake photos, no bait-and-switch — what you see is exactly who you meet.`,
+      `Absolutely. Every companion on Sonia Basu undergoes a strict 3-step verification: government-issued photo ID check, real-time photo confirmation, and a personal background review. We re-verify all active profiles every 90 days. No fake photos, no bait-and-switch — what you see is exactly who you meet.`,
   },
   {
     q: (loc: string) => `What types of companions are available in ${loc}?`,
@@ -90,14 +90,14 @@ const faqItems = [
       `In most ${loc} areas, same-day service is available within 45–90 minutes of booking confirmation. Advance booking of 4–6 hours guarantees your preferred companion and optimal scheduling. For express same-day requests, call directly for the fastest response.`,
   },
   {
-    q: (_: string) => `What makes VVIP Escorts different from other services?`,
+    q: (_: string) => `What makes Sonia Basu different from other services?`,
     a: (_: string) =>
-      `VVIP Escorts has operated since 2018 with a zero-compromise policy on verification, safety, and discretion. We hold a 4.9-star average rating across 583 independent reviews. Our team is available 24/7, no advance payment is required, and every companion is re-verified every 90 days — standards that no other platform in India consistently maintains.`,
+      `Sonia Basu has operated since 2018 with a zero-compromise policy on verification, safety, and discretion. We hold a 4.9-star average rating across 583 independent reviews. Our team is available 24/7, no advance payment is required, and every companion is re-verified every 90 days — standards that no other platform in India consistently maintains.`,
   },
   {
     q: (_: string) => `Do you serve clients outside the main city areas?`,
     a: (_: string) =>
-      `Yes. VVIP Escorts serves 150+ cities across India including Delhi, Bangalore, Hyderabad, Pune, Goa, Chandigarh, Jaipur, and all major metropolitan areas. Intercity and outstation travel arrangements are also available for premium bookings. Call us to confirm availability in your specific area.`,
+      `Yes. Sonia Basu serves 150+ cities across India including Delhi, Bangalore, Hyderabad, Pune, Goa, Chandigarh, Jaipur, and all major metropolitan areas. Intercity and outstation travel arrangements are also available for premium bookings. Call us to confirm availability in your specific area.`,
   },
 ];
 
@@ -114,10 +114,10 @@ export default async function SlugPage({ params }: Props) {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: page.schemaName ?? `VVIP Escorts ${locationName}`,
-    image: "https://vvip-escorts.com/images/logo.png",
-    "@id": `https://vvip-escorts.com/${slug}`,
-    url: `https://vvip-escorts.com/${slug}`,
+    name: page.schemaName ?? `Sonia Basu ${locationName}`,
+    image: "https://soniabasu.com/images/logo.png",
+    "@id": `https://soniabasu.com/${slug}`,
+    url: `https://soniabasu.com/${slug}`,
     telephone: "+917091585737",
     priceRange: "₹₹₹",
     description: page.description,
@@ -151,8 +151,8 @@ export default async function SlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://vvip-escorts.com/" },
-      { "@type": "ListItem", position: 2, name: page.heroTitle, item: `https://vvip-escorts.com/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://soniabasu.com/" },
+      { "@type": "ListItem", position: 2, name: page.heroTitle, item: `https://soniabasu.com/${slug}` },
     ],
   };
 
@@ -181,7 +181,7 @@ export default async function SlugPage({ params }: Props) {
           display: "flex",
           alignItems: "center",
         }}
-        aria-label={`VVIP Escorts ${locationName} — Premium Companion Service`}
+        aria-label={`Sonia Basu ${locationName} — Premium Companion Service`}
       >
         <div className="container" style={{ width: "100%" }}>
           <div className="hero-content">
@@ -189,7 +189,7 @@ export default async function SlugPage({ params }: Props) {
               ✦ India&apos;s Leading Luxury Companion Service
             </p>
             <h1 style={{ fontSize: "clamp(1.8rem, 4.5vw, 3.4rem)", lineHeight: 1.2, marginBottom: "1.2rem", fontWeight: 700 }}>
-              VVIP Escorts {locationName}<br />
+              Sonia Basu {locationName}<br />
               <span style={{ color: "var(--primary-color)" }}>Premium. Verified. Discreet.</span>
             </h1>
             <p style={{ fontSize: "1.1rem", maxWidth: "620px", margin: "0 auto 2rem", lineHeight: 1.8, color: "#e0d4b0" }}>
@@ -199,7 +199,7 @@ export default async function SlugPage({ params }: Props) {
               <a
                 href="tel:+917091585737"
                 className="btn btn-primary"
-                aria-label={`Call VVIP Escorts ${locationName}`}
+                aria-label={`Call Sonia Basu ${locationName}`}
                 style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}
               >
                 📞 Call Now: +91 70 9158 5737
@@ -209,7 +209,7 @@ export default async function SlugPage({ params }: Props) {
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`WhatsApp VVIP Escorts ${locationName}`}
+                aria-label={`WhatsApp Sonia Basu ${locationName}`}
                 style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}
               >
                 💬 WhatsApp Us
@@ -226,9 +226,9 @@ export default async function SlugPage({ params }: Props) {
       </section>
 
       {/* Trust Intro */}
-      <section className="contact-instant" aria-label={`About VVIP Escorts ${locationName}`} style={{ background: "#0f0e08", borderBottom: "1px solid rgba(201,168,76,0.2)" }}>
+      <section className="contact-instant" aria-label={`About Sonia Basu ${locationName}`} style={{ background: "#0f0e08", borderBottom: "1px solid rgba(201,168,76,0.2)" }}>
         <div className="container">
-          <h2>Why {locationName}&apos;s Discerning Clients Choose VVIP Escorts</h2>
+          <h2>Why {locationName}&apos;s Discerning Clients Choose Sonia Basu</h2>
           <p style={{ maxWidth: "780px", margin: "0 auto 1.5rem", lineHeight: 1.9, color: "#c8b98a" }}
             dangerouslySetInnerHTML={{ __html: page.intro }} />
           <div className="contact-buttons">
@@ -266,7 +266,7 @@ export default async function SlugPage({ params }: Props) {
                     <div className="stat"><strong>Figure</strong><span>{escort.figure}</span></div>
                     <div className="stat"><strong>Size</strong><span>{escort.size}</span></div>
                   </div>
-                  <Link href="/contact" className="btn-contact" aria-label={`Book ${escort.name} — VVIP Escorts ${locationName}`}>
+                  <Link href="/contact" className="btn-contact" aria-label={`Book ${escort.name} — Sonia Basu ${locationName}`}>
                     Book Now
                   </Link>
                 </div>
@@ -277,12 +277,12 @@ export default async function SlugPage({ params }: Props) {
       </section>
 
       {/* EEAT Content Section */}
-      <section className="content-section" aria-label={`About VVIP Escorts ${locationName}`} style={{ background: "#0f0e08" }}>
+      <section className="content-section" aria-label={`About Sonia Basu ${locationName}`} style={{ background: "#0f0e08" }}>
         <div className="container">
-          <h2>VVIP Escorts {locationName} — India&apos;s Premium Companion Service</h2>
+          <h2>Sonia Basu {locationName} — India&apos;s Premium Companion Service</h2>
           <div className="content-wrapper">
             <p>
-              <strong>VVIP Escorts {locationName}</strong> is part of India&apos;s most established premium companion network, operating since 2018 with an uncompromising commitment to quality, safety, and discretion. Our {locationName} roster includes verified VIP companions, Russian and European models, independent professionals, fashion models, and regional companions — all personally vetted and re-verified every 90 days.
+              <strong>Sonia Basu {locationName}</strong> is part of India&apos;s most established premium companion network, operating since 2018 with an uncompromising commitment to quality, safety, and discretion. Our {locationName} roster includes verified VIP companions, Russian and European models, independent professionals, fashion models, and regional companions — all personally vetted and re-verified every 90 days.
             </p>
             <h3>Experience You Can Trust in {locationName}</h3>
             <p>
@@ -294,7 +294,7 @@ export default async function SlugPage({ params }: Props) {
             </p>
             <h3>Incall &amp; Outcall Services in {locationName}</h3>
             <p>
-              Whether you prefer the privacy of a curated incall residence or the convenience of an outcall visit to your hotel, home, or private venue — VVIP Escorts accommodates seamlessly. We serve all major zones in and around {locationName}, with same-day availability in most areas within 45–90 minutes of booking confirmation.
+              Whether you prefer the privacy of a curated incall residence or the convenience of an outcall visit to your hotel, home, or private venue — Sonia Basu accommodates seamlessly. We serve all major zones in and around {locationName}, with same-day availability in most areas within 45–90 minutes of booking confirmation.
             </p>
             <h3>Transparent Pricing — No Hidden Charges</h3>
             <p>

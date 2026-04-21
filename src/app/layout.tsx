@@ -14,13 +14,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vvip-escorts.com"),
-  title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
+  metadataBase: new URL("https://soniabasu.com"),
+  title: "Sonia Basu Mumbai | India's #1 Premium Companion Service 24/7",
   description:
-    "VVIP Escorts Mumbai — India's most trusted premium companion service. 500+ verified profiles: VIP, Russian, Model, Independent & more. Available 24/7. Call +91 70 9158 5737",
+    "Sonia Basu Mumbai — India's most trusted premium companion service. 500+ verified profiles: VIP, Russian, Model, Independent & more. Available 24/7. Call +91 70 9158 5737",
   keywords:
-    "vvip escorts mumbai, escorts in mumbai, mumbai escorts, premium call girls mumbai, vip escorts mumbai, verified escorts mumbai",
-  authors: [{ name: "VVIP Escorts" }],
+    "sonia basu mumbai, escorts in mumbai, mumbai escorts, premium call girls mumbai, vip escorts mumbai, verified escorts mumbai",
+  authors: [{ name: "Sonia Basu" }],
   robots:
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   other: { rating: "adult", "revisit-after": "1 days" },

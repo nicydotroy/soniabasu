@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VVIP Escorts Locations Mumbai | Navi Mumbai, Thane & Pan-India Service",
+  title: "Sonia Basu Locations Mumbai | Navi Mumbai, Thane & Pan-India Service",
   description:
-    "VVIP Escorts serves all Mumbai zones, Navi Mumbai, Thane and 150+ cities across India. Same-day incall & outcall available. Call +91 70 9158 5737 for your area.",
-  alternates: { canonical: "https://vvip-escorts.com/location" },
+    "Sonia Basu serves all Mumbai zones, Navi Mumbai, Thane and 150+ cities across India. Same-day incall & outcall available. Call +91 70 9158 5737 for your area.",
+  alternates: { canonical: "https://soniabasu.com/location" },
 };
 
 const mumbaiAreas = [
@@ -38,14 +38,14 @@ export default function LocationPage() {
           display: "flex",
           alignItems: "center",
         }}
-        aria-label="VVIP Escorts Mumbai Locations"
+        aria-label="Sonia Basu Mumbai Locations"
       >
         <div className="container" style={{ width: "100%" }}>
           <div className="hero-content">
             <p style={{ color: "var(--primary-color)", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", fontSize: "0.9rem", marginBottom: "1rem" }}>
               ✦ 150+ Cities Across India
             </p>
-            <h1>VVIP Escorts — Mumbai & Pan-India Coverage</h1>
+            <h1>Sonia Basu — Mumbai & Pan-India Coverage</h1>
             <p style={{ color: "#e0d4b0", maxWidth: "560px", margin: "0 auto 1.5rem" }}>
               Serving all Mumbai zones, Navi Mumbai, Thane, and 150+ cities across India. Incall and outcall available same day.
             </p>

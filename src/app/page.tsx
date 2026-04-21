@@ -4,17 +4,17 @@ import Link from "next/link";
 import { escorts } from "@/data/escorts";
 
 export const metadata: Metadata = {
-  title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
+  title: "Sonia Basu Mumbai | India's #1 Premium Companion Service 24/7",
   description:
-    "VVIP Escorts Mumbai — India's most trusted premium companion service since 2018. 500+ verified profiles, VIP escorts, Russian models, independent companions across all Mumbai locations. 100% discreet & safe. Call +91 70 9158 5737",
-  alternates: { canonical: "https://vvip-escorts.com/" },
+    "Sonia Basu Mumbai — India's most trusted premium companion service since 2018. 500+ verified profiles, VIP escorts, Russian models, independent companions across all Mumbai locations. 100% discreet & safe. Call +91 70 9158 5737",
+  alternates: { canonical: "https://soniabasu.com/" },
   openGraph: {
     type: "website",
-    url: "https://vvip-escorts.com/",
-    title: "VVIP Escorts Mumbai | India's #1 Premium Companion Service 24/7",
+    url: "https://soniabasu.com/",
+    title: "Sonia Basu Mumbai | India's #1 Premium Companion Service 24/7",
     description:
       "India's most trusted premium companion service. 500+ verified profiles. VIP, Russian, Model & Independent escorts across all Mumbai locations. Available 24/7.",
-    images: [{ url: "https://vvip-escorts.com/images/escorts-in-mumbai-banner.webp" }],
+    images: [{ url: "https://soniabasu.com/images/escorts-in-mumbai-banner.webp" }],
   },
 };
 
@@ -25,10 +25,10 @@ const faqItems = [
   },
   {
     q: "Are all escort profiles verified and genuine?",
-    a: "Yes — every profile on VVIP Escorts undergoes a strict 3-step verification: photo ID check, real-time photo confirmation, and a background review. We guarantee no fake profiles, no bait-and-switch, and no stolen pictures. What you see is exactly who you meet.",
+    a: "Yes — every profile on Sonia Basu undergoes a strict 3-step verification: photo ID check, real-time photo confirmation, and a background review. We guarantee no fake profiles, no bait-and-switch, and no stolen pictures. What you see is exactly who you meet.",
   },
   {
-    q: "What types of companions does VVIP Escorts offer?",
+    q: "What types of companions does Sonia Basu offer?",
     a: "We offer VIP & high-profile escorts, Russian and European models, independent escorts, fashion model escorts, college companions, celebrity look-alikes, air hostess companions, housewife escorts, and regional companions including Punjabi, Bengali, South Indian, Gujarati, and Marathi profiles.",
   },
   {
@@ -65,7 +65,7 @@ const faqItems = [
   },
   {
     q: "Do you serve clients outside Mumbai?",
-    a: "Yes. VVIP Escorts operates across India — Delhi, Bangalore, Hyderabad, Pune, Goa, Chandigarh, and 150+ locations nationwide. Intercity and outstation travel arrangements are available for premium bookings.",
+    a: "Yes. Sonia Basu operates across India — Delhi, Bangalore, Hyderabad, Pune, Goa, Chandigarh, and 150+ locations nationwide. Intercity and outstation travel arrangements are available for premium bookings.",
   },
 ];
 
@@ -133,10 +133,10 @@ const trustPoints = [
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "VVIP Escorts Mumbai",
-  image: "https://vvip-escorts.com/images/logo.png",
-  "@id": "https://vvip-escorts.com",
-  url: "https://vvip-escorts.com",
+  name: "Sonia Basu Mumbai",
+  image: "https://soniabasu.com/images/logo.png",
+  "@id": "https://soniabasu.com",
+  url: "https://soniabasu.com",
   telephone: "+917091585737",
   priceRange: "₹₹₹",
   description: "India's premier luxury companion service offering verified VIP escorts, Russian models, and independent companions across Mumbai and 150+ cities.",
@@ -187,7 +187,7 @@ export default function HomePage() {
           display: "flex",
           alignItems: "center",
         }}
-        aria-label="VVIP Escorts Mumbai — India's #1 Premium Companion Service"
+        aria-label="Sonia Basu Mumbai — India's #1 Premium Companion Service"
       >
         <div className="container" style={{ width: "100%" }}>
           <div className="hero-content">
@@ -195,7 +195,7 @@ export default function HomePage() {
               ✦ India&apos;s Leading Luxury Companion Service
             </p>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.6rem)", lineHeight: 1.2, marginBottom: "1.2rem", fontWeight: 700 }}>
-              VVIP Escorts Mumbai<br />
+              Sonia Basu Mumbai<br />
               <span style={{ color: "var(--primary-color)" }}>Premium. Verified. Discreet.</span>
             </h1>
             <p style={{ fontSize: "1.15rem", maxWidth: "620px", margin: "0 auto 2rem", lineHeight: 1.8, color: "#e0d4b0" }}>
@@ -205,7 +205,7 @@ export default function HomePage() {
               <a
                 href="tel:+917091585737"
                 className="btn btn-primary"
-                aria-label="Call VVIP Escorts Mumbai"
+                aria-label="Call Sonia Basu Mumbai"
                 style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}
               >
                 📞 Call Now: +91 70 9158 5737
@@ -215,7 +215,7 @@ export default function HomePage() {
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="WhatsApp VVIP Escorts"
+                aria-label="WhatsApp Sonia Basu"
                 style={{ borderColor: "var(--primary-color)", color: "var(--primary-color)" }}
               >
                 💬 WhatsApp Us
@@ -244,14 +244,14 @@ export default function HomePage() {
       </section>
 
       {/* About / Trust Intro */}
-      <section className="contact-instant" aria-label="About VVIP Escorts Mumbai" style={{ background: "#0f0e08", borderBottom: "1px solid rgba(201,168,76,0.2)" }}>
+      <section className="contact-instant" aria-label="About Sonia Basu Mumbai" style={{ background: "#0f0e08", borderBottom: "1px solid rgba(201,168,76,0.2)" }}>
         <div className="container">
-          <h2>Why Mumbai&apos;s Discerning Clients Choose VVIP Escorts</h2>
+          <h2>Why Mumbai&apos;s Discerning Clients Choose Sonia Basu</h2>
           <p style={{ maxWidth: "780px", margin: "0 auto 2rem", lineHeight: 1.9, color: "#c8b98a" }}>
-            Since 2018, <strong style={{ color: "var(--primary-color)" }}>VVIP Escorts Mumbai</strong> has redefined the premium companion experience in India. We combine rigorous verification standards, absolute discretion, and a curated selection of companions to deliver an unmatched, luxury-class service. Every profile is personally vetted. Every booking is handled with total confidentiality. From a solitary evening in South Mumbai to a weekend getaway in Goa — our companions adapt to your lifestyle and your expectations.
+            Since 2018, <strong style={{ color: "var(--primary-color)" }}>Sonia Basu Mumbai</strong> has redefined the premium companion experience in India. We combine rigorous verification standards, absolute discretion, and a curated selection of companions to deliver an unmatched, luxury-class service. Every profile is personally vetted. Every booking is handled with total confidentiality. From a solitary evening in South Mumbai to a weekend getaway in Goa — our companions adapt to your lifestyle and your expectations.
           </p>
           <div className="contact-buttons">
-            <a href="tel:+917091585737" className="btn btn-call" aria-label="Call VVIP Escorts Mumbai Now" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
+            <a href="tel:+917091585737" className="btn btn-call" aria-label="Call Sonia Basu Mumbai Now" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>
               📞 Book Now — Call or WhatsApp
             </a>
           </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
                     <div className="stat"><strong>Figure</strong><span>{escort.figure}</span></div>
                     <div className="stat"><strong>Size</strong><span>{escort.size}</span></div>
                   </div>
-                  <Link href="/contact" className="btn-contact" aria-label={`Book ${escort.name} — VVIP Escorts Mumbai`}>
+                  <Link href="/contact" className="btn-contact" aria-label={`Book ${escort.name} — Sonia Basu Mumbai`}>
                     Book Now
                   </Link>
                 </div>
@@ -298,7 +298,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="about-section" aria-label="Why Choose VVIP Escorts" style={{ background: "#0f0e08" }}>
+      <section className="about-section" aria-label="Why Choose Sonia Basu" style={{ background: "#0f0e08" }}>
         <div className="container">
           <h2>The VVIP Difference — What Sets Us Apart</h2>
           <div className="about-grid">
@@ -345,7 +345,7 @@ export default function HomePage() {
       </section>
 
       {/* Locations — Creative Pill Cloud */}
-      <section className="locations-cloud-section" aria-label="VVIP Escorts India Coverage">
+      <section className="locations-cloud-section" aria-label="Sonia Basu India Coverage">
         <div className="container">
           <div className="locations-cloud-header">
             <span className="locations-kicker">✦ Pan-India Coverage</span>
@@ -375,12 +375,12 @@ export default function HomePage() {
       </section>
 
       {/* SEO Content */}
-      <section className="content-section" aria-label="About VVIP Escorts Mumbai" style={{ background: "#0a0a05" }}>
+      <section className="content-section" aria-label="About Sonia Basu Mumbai" style={{ background: "#0a0a05" }}>
         <div className="container">
-          <h2>VVIP Escorts Mumbai — India&apos;s Premier Companion Service</h2>
+          <h2>Sonia Basu Mumbai — India&apos;s Premier Companion Service</h2>
           <div className="content-wrapper">
             <p>
-              <strong>VVIP Escorts Mumbai</strong> is India&apos;s most established premium companion service, operating since 2018 with an uncompromising commitment to quality, safety, and discretion. Our network includes over 500 active, verified companions spanning VIP escorts, Russian and European models, independent professionals, fashion models, and regional companions across all Indian profiles.
+              <strong>Sonia Basu Mumbai</strong> is India&apos;s most established premium companion service, operating since 2018 with an uncompromising commitment to quality, safety, and discretion. Our network includes over 500 active, verified companions spanning VIP escorts, Russian and European models, independent professionals, fashion models, and regional companions across all Indian profiles.
             </p>
             <h3>Experience You Can Trust</h3>
             <p>

@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VVIP Escorts Gallery Mumbai | Verified Companion Profiles",
+  title: "Sonia Basu Gallery Mumbai | Verified Companion Profiles",
   description:
-    "Browse VVIP Escorts Mumbai's verified companion gallery. 500+ genuine profiles across VIP, Russian, Model, Independent and specialist categories. All photos real-time verified. No fake profiles.",
-  alternates: { canonical: "https://vvip-escorts.com/gallery" },
+    "Browse Sonia Basu Mumbai's verified companion gallery. 500+ genuine profiles across VIP, Russian, Model, Independent and specialist categories. All photos real-time verified. No fake profiles.",
+  alternates: { canonical: "https://soniabasu.com/gallery" },
 };
 
 const categories = [
@@ -28,14 +28,14 @@ export default function GalleryPage() {
           display: "flex",
           alignItems: "center",
         }}
-        aria-label="VVIP Escorts Mumbai Gallery"
+        aria-label="Sonia Basu Mumbai Gallery"
       >
         <div className="container" style={{ width: "100%" }}>
           <div className="hero-content">
             <p style={{ color: "var(--primary-color)", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", fontSize: "0.9rem", marginBottom: "1rem" }}>
               ✦ 500+ Verified Profiles
             </p>
-            <h1>VVIP Escorts Gallery — Mumbai</h1>
+            <h1>Sonia Basu Gallery — Mumbai</h1>
             <p style={{ color: "#e0d4b0", maxWidth: "540px", margin: "0 auto 1.5rem" }}>
               Browse our verified companion categories. Every photo is real, current, and authenticated. No fake profiles. No surprises.
             </p>
@@ -74,7 +74,7 @@ export default function GalleryPage() {
           <div className="gallery-note">
             <h3>✦ Privacy-First Photo Policy</h3>
             <p>
-              To protect the privacy and safety of all our companions, full profile photos are shared exclusively upon direct request. This policy ensures only serious, verified clients make contact — maintaining the trust and security that VVIP Escorts was built on.
+              To protect the privacy and safety of all our companions, full profile photos are shared exclusively upon direct request. This policy ensures only serious, verified clients make contact — maintaining the trust and security that Sonia Basu was built on.
             </p>
             <div className="contact-buttons">
               <a href="tel:+917091585737" className="btn btn-primary" style={{ background: "var(--primary-color)", color: "#0a0a05", fontWeight: 700 }}>📞 Request Profiles — Call Now</a>

@@ -4,8 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "VVIP Escort Services Mumbai | VIP, Russian, Model, Independent 24/7",
   description:
-    "Explore VVIP Escorts Mumbai's premium service menu: VIP high-profile escorts, Russian & European models, independent companions, college girls, air hostess, housewife escorts and more. All verified. Available 24/7.",
-  alternates: { canonical: "https://vvip-escorts.com/services" },
+    "Explore Sonia Basu Mumbai's premium service menu: VIP high-profile escorts, Russian & European models, independent companions, college girls, air hostess, housewife escorts and more. All verified. Available 24/7.",
+  alternates: { canonical: "https://soniabasu.com/services" },
 };
 
 const services = [
@@ -133,7 +133,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Booking Process */}
-      <section className="booking-process" style={{ background: "#0f0e08" }} aria-label="How to Book VVIP Escorts">
+      <section className="booking-process" style={{ background: "#0f0e08" }} aria-label="How to Book Sonia Basu">
         <div className="container">
           <h2>How to Book Your VVIP Companion</h2>
           <div className="process-steps">
@@ -161,15 +161,15 @@ export default function ServicesPage() {
           <h2>Premium Escort Services in Mumbai — The VVIP Standard</h2>
           <div className="content-wrapper">
             <p>
-              <strong>VVIP Escorts Mumbai</strong> operates India&apos;s most comprehensive premium companion service platform, connecting discerning clients with verified, professional companions across Mumbai and 150+ cities nationwide. Our service menu is designed to cater to every preference — from VIP high-profile encounters to warm, mature companionship — with no compromise on safety, authenticity, or discretion.
+              <strong>Sonia Basu Mumbai</strong> operates India&apos;s most comprehensive premium companion service platform, connecting discerning clients with verified, professional companions across Mumbai and 150+ cities nationwide. Our service menu is designed to cater to every preference — from VIP high-profile encounters to warm, mature companionship — with no compromise on safety, authenticity, or discretion.
             </p>
-            <h3>Why Trust VVIP Escorts?</h3>
+            <h3>Why Trust Sonia Basu?</h3>
             <p>
               Our reputation is built on six years of zero-compromise service delivery. Every companion on our platform is verified through a three-stage process: government-issued ID authentication, real-time photo confirmation, and a personal interview. We re-verify all active profiles every 90 days to guarantee ongoing accuracy. This systematic approach has earned us an average client rating of 4.9 stars across 583 independent reviews.
             </p>
             <h3>Incall and Outcall Services Across Mumbai</h3>
             <p>
-              Whether you prefer the privacy of an incall at a companion&apos;s curated personal residence, or the convenience of an outcall visit to your hotel, home, or event venue — VVIP Escorts accommodates your preference seamlessly. We serve all major Mumbai zones and surrounding areas, with same-day availability in most locations within 45–90 minutes.
+              Whether you prefer the privacy of an incall at a companion&apos;s curated personal residence, or the convenience of an outcall visit to your hotel, home, or event venue — Sonia Basu accommodates your preference seamlessly. We serve all major Mumbai zones and surrounding areas, with same-day availability in most locations within 45–90 minutes.
             </p>
           </div>
         </div>

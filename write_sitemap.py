@@ -30,7 +30,7 @@ category_slugs = [
     'unsatisfied-bhabhi','unsatisfied-female','vip-escorts',
 ]
 
-BASE = "https://vvip-escorts.com"
+BASE = "https://soniabasu.com"
 
 def url(loc, changefreq="weekly", priority="0.8"):
     return f"""  <url>

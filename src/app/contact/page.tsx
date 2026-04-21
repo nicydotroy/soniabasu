@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact VVIP Escorts Mumbai | 24/7 Booking Hotline",
+  title: "Contact Sonia Basu Mumbai | 24/7 Booking Hotline",
   description:
-    "Contact VVIP Escorts Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 70 9158 5737 for instant confirmation. Discreet, professional response guaranteed.",
-  alternates: { canonical: "https://vvip-escorts.com/contact" },
+    "Contact Sonia Basu Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 70 9158 5737 for instant confirmation. Discreet, professional response guaranteed.",
+  alternates: { canonical: "https://soniabasu.com/contact" },
 };
 
 export default function ContactPage() {
@@ -19,14 +19,14 @@ export default function ContactPage() {
           display: "flex",
           alignItems: "center",
         }}
-        aria-label="Contact VVIP Escorts Mumbai"
+        aria-label="Contact Sonia Basu Mumbai"
       >
         <div className="container" style={{ width: "100%" }}>
           <div className="hero-content">
             <p style={{ color: "var(--primary-color)", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", fontSize: "0.9rem", marginBottom: "1rem" }}>
               ✦ Available 24 Hours, 7 Days a Week
             </p>
-            <h1>Contact VVIP Escorts Mumbai</h1>
+            <h1>Contact Sonia Basu Mumbai</h1>
             <p style={{ color: "#e0d4b0", maxWidth: "540px", margin: "0 auto 1.5rem" }}>
               Reach our dedicated booking team any time. Instant response, complete confidentiality, zero obligation.
             </p>
@@ -176,7 +176,7 @@ export default function ContactPage() {
       </section>
 
       {/* Quick Contact CTA */}
-      <section className="quick-contact" style={{ background: "linear-gradient(135deg,#0d0d0d 0,#1a1506 100%)", borderTop: "1px solid rgba(201,168,76,0.3)" }} aria-label="Quick Contact VVIP Escorts">
+      <section className="quick-contact" style={{ background: "linear-gradient(135deg,#0d0d0d 0,#1a1506 100%)", borderTop: "1px solid rgba(201,168,76,0.3)" }} aria-label="Quick Contact Sonia Basu">
         <div className="container">
           <h2>Book Your Companion Now</h2>
           <p>Same-day availability across all Mumbai locations. Call or WhatsApp for instant confirmation.</p>

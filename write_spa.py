@@ -30,10 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Body Massage in ${name} | Spa & Relaxation Centre 24/7 | VVIP Spa`,
     description: `Premium body massage & spa services in ${name}. Swedish, Thai, deep tissue & full body massage by verified female therapists. 24/7 incall & outcall available. Book now!`,
     keywords: `body massage in ${slug}, spa in ${slug}, massage centre ${slug}, full body massage ${slug}, female to male massage ${slug}, spa services ${slug}`,
-    alternates: { canonical: `https://vvip-escorts.com/spa/${slug}` },
+    alternates: { canonical: `https://soniabasu.com/spa/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://vvip-escorts.com/spa/${slug}`,
+      url: `https://soniabasu.com/spa/${slug}`,
       title: `Body Massage in ${name} | VVIP Spa`,
       description: `Premium body massage & spa services in ${name} — 24/7 availability. Verified therapists, incall & outcall.`,
     },
@@ -119,9 +119,9 @@ export default async function SpaSlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "DaySpa",
     name: `VVIP Spa ${locationName}`,
-    image: "https://vvip-escorts.com/images/logo.png",
-    "@id": `https://vvip-escorts.com/spa/${slug}`,
-    url: `https://vvip-escorts.com/spa/${slug}`,
+    image: "https://soniabasu.com/images/logo.png",
+    "@id": `https://soniabasu.com/spa/${slug}`,
+    url: `https://soniabasu.com/spa/${slug}`,
     telephone: "+917091585737",
     priceRange: "₹₹₹",
     description: `Premium body massage and spa services in ${locationName}. Verified female therapists, 24/7 availability, incall and outcall.`,
@@ -149,9 +149,9 @@ export default async function SpaSlugPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://vvip-escorts.com/" },
-      { "@type": "ListItem", position: 2, name: "Spa Services", item: "https://vvip-escorts.com/spa" },
-      { "@type": "ListItem", position: 3, name: `Body Massage in ${locationName}`, item: `https://vvip-escorts.com/spa/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://soniabasu.com/" },
+      { "@type": "ListItem", position: 2, name: "Spa Services", item: "https://soniabasu.com/spa" },
+      { "@type": "ListItem", position: 3, name: `Body Massage in ${locationName}`, item: `https://soniabasu.com/spa/${slug}` },
     ],
   };
 
