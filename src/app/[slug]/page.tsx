@@ -22,11 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: page.description,
     keywords: page.keywords,
     alternates: { canonical: `https://soniabasu.vercel.app/${slug}` },
+    other: page.dateModified ? { "article:modified_time": page.dateModified } : undefined,
     openGraph: {
       type: "website",
       url: `https://soniabasu.vercel.app/${slug}`,
       title: page.title,
       description: page.description,
+      siteName: "Sonia Basu Mumbai",
+      locale: "en_IN",
       images: page.ogImage ? [{ url: page.ogImage }] : [],
     },
     twitter: {
@@ -111,22 +114,27 @@ export default async function SlugPage({ params }: Props) {
   const col1 = faqItems.slice(0, half);
   const col2 = faqItems.slice(half);
 
+  const SITE = "https://soniabasu.vercel.app";
+  const pageUrl = `${SITE}/${slug}`;
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${pageUrl}#localbusiness`,
     name: page.schemaName ?? `Sonia Basu ${locationName}`,
-    image: "https://soniabasu.vercel.app/images/logo.png",
-    "@id": `https://soniabasu.vercel.app/${slug}`,
-    url: `https://soniabasu.vercel.app/${slug}`,
+    image: `${SITE}/images/logo.png`,
+    logo: `${SITE}/images/logo.png`,
+    url: pageUrl,
     telephone: "+917091585737",
     priceRange: "₹₹₹",
     description: page.description,
+    parentOrganization: { "@id": `${SITE}#organization` },
     address: {
       "@type": "PostalAddress",
       streetAddress: locationName,
       addressLocality: locationName,
-      addressRegion: "Maharashtra",
-      postalCode: "400001",
+      addressRegion: page.schemaRegion ?? "Maharashtra",
+      postalCode: page.schemaPostalCode ?? "400001",
       addressCountry: "IN",
     },
     geo: {
@@ -134,10 +142,13 @@ export default async function SlugPage({ params }: Props) {
       latitude: page.schemaLat ?? 19.076,
       longitude: page.schemaLng ?? 72.8777,
     },
+    areaServed: { "@type": "City", name: locationName },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
       reviewCount: String(page.schemaReviewCount ?? 200),
+      bestRating: "5",
+      worstRating: "1",
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -145,14 +156,15 @@ export default async function SlugPage({ params }: Props) {
       opens: "00:00",
       closes: "23:59",
     },
+    sameAs: ["https://wa.me/917091585737"],
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://soniabasu.vercel.app/" },
-      { "@type": "ListItem", position: 2, name: page.heroTitle, item: `https://soniabasu.vercel.app/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: `Escorts in ${locationName}`, item: pageUrl },
     ],
   };
 
@@ -166,11 +178,49 @@ export default async function SlugPage({ params }: Props) {
     })),
   };
 
+  // WebPage + Speakable: tells Google Assistant / AI Overviews / ChatGPT
+  // which DOM regions are the canonical "spoken" / quoted answer (VSO+AEO).
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: page.title,
+    isPartOf: { "@id": `${SITE}#website` },
+    about: { "@id": `${SITE}#organization` },
+    primaryImageOfPage: page.ogImage ?? `${SITE}/images/escorts-in-mumbai-banner.webp`,
+    inLanguage: "en-IN",
+    datePublished: "2018-01-01",
+    dateModified: page.dateModified ?? "2026-05-28",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".aeo-tldr", ".faq-question h3", ".faq-answer p"],
+    },
+  };
+
+  // HowTo schema — AEO booking instructions answer engines can quote.
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to book a verified escort in ${locationName}`,
+    description: `Four-step booking process for a verified Sonia Basu companion in ${locationName}.`,
+    totalTime: "PT5M",
+    estimatedCost: { "@type": "MonetaryAmount", currency: "INR", value: "0" },
+    step: [
+      { "@type": "HowToStep", position: 1, name: `Browse ${locationName} profiles`, text: `Open the ${locationName} gallery and pick a category — VIP, Russian, independent, model or college companions, all photo-verified.` },
+      { "@type": "HowToStep", position: 2, name: "Call or WhatsApp +91 70 9158 5737", text: `Reach the booking team 24/7. Confirm availability of your chosen companion in ${locationName}.` },
+      { "@type": "HowToStep", position: 3, name: "Confirm location and timing", text: `Choose incall (companion's residence) or outcall (your hotel / home / venue) in ${locationName}, date, time and duration.` },
+      { "@type": "HowToStep", position: 4, name: "Companion arrives in 45–90 minutes", text: `Your verified companion arrives at the agreed ${locationName} address. Pay at the time of service — no advance required.` },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       {/* Hero */}
       <section
@@ -222,6 +272,34 @@ export default async function SlugPage({ params }: Props) {
               <div className="hero-stat"><strong>150+</strong><span>Cities Covered</span></div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* AEO Direct-Answer TL;DR — voice search + answer engine optimised */}
+      <section
+        className="aeo-answer"
+        aria-label={`Quick answer about ${page.type === "location" ? "escorts in " + locationName : locationName}`}
+        style={{
+          background: "linear-gradient(180deg,#0a0a05 0%,#0f0e08 100%)",
+          padding: "2.25rem 0",
+          borderBottom: "1px solid rgba(201,168,76,0.18)",
+        }}
+      >
+        <div className="container" style={{ maxWidth: "880px" }}>
+          <p
+            className="aeo-tldr"
+            style={{ fontSize: "1.08rem", lineHeight: 1.85, color: "#e8dcb4", textAlign: "center", margin: 0 }}
+          >
+            {page.type === "location" ? (
+              <>
+                <strong style={{ color: "var(--primary-color)" }}>Sonia Basu {locationName}</strong> provides photo-verified premium companions across {locationName}. <strong>500+ verified profiles</strong> — VIP, Russian, independent, college and model escorts — bookable 24/7 by phone or WhatsApp on <a href="tel:+917091585737" style={{ color: "var(--primary-color)", whiteSpace: "nowrap" }}>+91 70 9158 5737</a>. <strong>Same-day arrival in 45–90 minutes</strong>, no advance payment, complete discretion. Incall &amp; outcall available across {locationName}.
+              </>
+            ) : (
+              <>
+                <strong style={{ color: "var(--primary-color)" }}>{page.schemaName ?? "Sonia Basu Mumbai"}</strong> connects you with verified <strong>{locationName.toLowerCase()}</strong> in Mumbai. All profiles are photo-verified every 90 days, available 24/7 for incall &amp; outcall booking on <a href="tel:+917091585737" style={{ color: "var(--primary-color)", whiteSpace: "nowrap" }}>+91 70 9158 5737</a>. Same-day arrival, no advance payment, 4.9★ rated across 583 reviews.
+              </>
+            )}
+          </p>
         </div>
       </section>
 

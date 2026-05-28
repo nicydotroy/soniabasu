@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const SITE = "https://soniabasu.vercel.app";
+const PAGE_URL = `${SITE}/gallery`;
+const PAGE_MODIFIED = "2026-05-28";
+
 export const metadata: Metadata = {
   title: "Sonia Basu Gallery Mumbai | Verified Companion Profiles",
   description:
     "Browse Sonia Basu Mumbai's verified companion gallery. 500+ genuine profiles across VIP, Russian, Model, Independent and specialist categories. All photos real-time verified. No fake profiles.",
-  alternates: { canonical: "https://soniabasu.vercel.app/gallery" },
+  alternates: { canonical: PAGE_URL },
+  other: { "article:modified_time": PAGE_MODIFIED },
+  openGraph: {
+    type: "website",
+    url: PAGE_URL,
+    title: "Sonia Basu Gallery Mumbai | Verified Companion Profiles",
+    description: "500+ photo-verified companion profiles across all premium categories.",
+    siteName: "Sonia Basu Mumbai",
+    locale: "en_IN",
+    images: [{ url: `${SITE}/images/escorts-in-mumbai-banner.webp` }],
+  },
 };
 
 const categories = [
@@ -17,9 +31,46 @@ const categories = [
   { icon: "⭐", title: "Celebrity & Glamour", desc: "Bollywood-inspired glamour companions for premium and extraordinary experiences.", href: "/celebrity-escorts" },
 ];
 
+const galleryCollection = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${PAGE_URL}#collection`,
+  url: PAGE_URL,
+  name: "Sonia Basu Verified Companion Gallery",
+  isPartOf: { "@id": `${SITE}#website` },
+  about: { "@id": `${SITE}#organization` },
+  inLanguage: "en-IN",
+  datePublished: "2018-01-01",
+  dateModified: PAGE_MODIFIED,
+  speakable: { "@type": "SpeakableSpecification", cssSelector: [".aeo-tldr", "h2", "h3"] },
+  mainEntity: {
+    "@type": "ItemList",
+    name: "Verified Companion Categories",
+    numberOfItems: categories.length,
+    itemListElement: categories.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.title,
+      url: `${SITE}${c.href}`,
+    })),
+  },
+};
+
+const galleryBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Gallery", item: PAGE_URL },
+  ],
+};
+
 export default function GalleryPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryCollection) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryBreadcrumb) }} />
+
       <section
         className="hero"
         style={{
@@ -45,6 +96,26 @@ export default function GalleryPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* AEO Direct-Answer TL;DR */}
+      <section
+        className="aeo-answer"
+        aria-label="Quick answer about the Sonia Basu gallery"
+        style={{
+          background: "linear-gradient(180deg,#0a0a05 0%,#0f0e08 100%)",
+          padding: "2.25rem 0",
+          borderBottom: "1px solid rgba(201,168,76,0.18)",
+        }}
+      >
+        <div className="container" style={{ maxWidth: "880px" }}>
+          <p
+            className="aeo-tldr"
+            style={{ fontSize: "1.08rem", lineHeight: 1.85, color: "#e8dcb4", textAlign: "center", margin: 0 }}
+          >
+            The Sonia Basu gallery features <strong>500+ photo-verified companion profiles</strong> across six premium categories — VIP, Russian / European, independent, fashion model, college and celebrity. Every image is <strong>real-time verified</strong> with no fake or recycled photos. For privacy, detailed profile photos are shared <em>on request</em> via WhatsApp on <a href="tel:+917091585737" style={{ color: "var(--primary-color)", whiteSpace: "nowrap" }}>+91 70 9158 5737</a> — this keeps companions safe and ensures only serious clients reach out.
+          </p>
         </div>
       </section>
 

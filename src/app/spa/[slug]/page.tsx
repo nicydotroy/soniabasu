@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { locationSlugs } from "@/data/pages";
+import { locationSlugs, getLocationGeo } from "@/data/pages";
 import { spaTherapists } from "@/data/spaServices";
 
 interface Props {
@@ -27,11 +27,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `Premium body massage & spa services in ${name}. Swedish, Thai, deep tissue & full body massage by verified female therapists. 24/7 incall & outcall available. Book now!`,
     keywords: `body massage in ${slug}, spa in ${slug}, massage centre ${slug}, full body massage ${slug}, female to male massage ${slug}, spa services ${slug}`,
     alternates: { canonical: `https://soniabasu.vercel.app/spa/${slug}` },
+    other: { "article:modified_time": "2026-05-28" },
     openGraph: {
       type: "website",
       url: `https://soniabasu.vercel.app/spa/${slug}`,
       title: `Body Massage in ${name} | VVIP Spa`,
       description: `Premium body massage & spa services in ${name} — 24/7 availability. Verified therapists, incall & outcall.`,
+      siteName: "VVIP Spa by Sonia Basu",
+      locale: "en_IN",
     },
     twitter: {
       card: "summary_large_image",
@@ -110,28 +113,39 @@ export default async function SpaSlugPage({ params }: Props) {
   const half = Math.ceil(faqItems.length / 2);
   const col1 = faqItems.slice(0, half);
   const col2 = faqItems.slice(half);
+  const geo = getLocationGeo(slug);
+  const SITE = "https://soniabasu.vercel.app";
+  const pageUrl = `${SITE}/spa/${slug}`;
+  const PAGE_MODIFIED = "2026-05-28";
 
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "DaySpa",
+    "@id": `${pageUrl}#dayspa`,
     name: `VVIP Spa ${locationName}`,
-    image: "https://soniabasu.vercel.app/images/logo.png",
-    "@id": `https://soniabasu.vercel.app/spa/${slug}`,
-    url: `https://soniabasu.vercel.app/spa/${slug}`,
+    image: `${SITE}/images/logo.png`,
+    logo: `${SITE}/images/logo.png`,
+    url: pageUrl,
     telephone: "+917091585737",
     priceRange: "₹₹₹",
     description: `Premium body massage and spa services in ${locationName}. Verified female therapists, 24/7 availability, incall and outcall.`,
+    parentOrganization: { "@id": `${SITE}#organization` },
     address: {
       "@type": "PostalAddress",
       streetAddress: locationName,
       addressLocality: locationName,
-      addressRegion: "Maharashtra",
+      addressRegion: geo.region,
+      postalCode: geo.postalCode,
       addressCountry: "IN",
     },
+    geo: { "@type": "GeoCoordinates", latitude: geo.lat, longitude: geo.lng },
+    areaServed: { "@type": "City", name: locationName },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
       reviewCount: "500",
+      bestRating: "5",
+      worstRating: "1",
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -139,15 +153,16 @@ export default async function SpaSlugPage({ params }: Props) {
       opens: "00:00",
       closes: "23:59",
     },
+    sameAs: ["https://wa.me/917091585737"],
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://soniabasu.vercel.app/" },
-      { "@type": "ListItem", position: 2, name: "Spa Services", item: "https://soniabasu.vercel.app/spa" },
-      { "@type": "ListItem", position: 3, name: `Body Massage in ${locationName}`, item: `https://soniabasu.vercel.app/spa/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: "Spa Services", item: `${SITE}/spa` },
+      { "@type": "ListItem", position: 3, name: `Body Massage in ${locationName}`, item: pageUrl },
     ],
   };
 
@@ -161,11 +176,46 @@ export default async function SpaSlugPage({ params }: Props) {
     })),
   };
 
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: `Body Massage in ${locationName} | Spa & Relaxation Centre 24/7 | VVIP Spa`,
+    isPartOf: { "@id": `${SITE}#website` },
+    about: { "@id": `${SITE}#organization` },
+    primaryImageOfPage: `${SITE}/images/escorts-in-mumbai-banner.webp`,
+    inLanguage: "en-IN",
+    datePublished: "2018-01-01",
+    dateModified: PAGE_MODIFIED,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".aeo-tldr", ".faq-question h3", ".faq-answer p"],
+    },
+  };
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to book a body massage in ${locationName}`,
+    description: `Four-step booking process for a verified VVIP Spa massage therapist in ${locationName}.`,
+    totalTime: "PT5M",
+    estimatedCost: { "@type": "MonetaryAmount", currency: "INR", value: "2500" },
+    step: [
+      { "@type": "HowToStep", position: 1, name: `Pick your massage style in ${locationName}`, text: `Choose from Swedish, Thai, deep tissue, aromatherapy, hot stone, Nuru, body-to-body, Balinese or couple spa packages available in ${locationName}.` },
+      { "@type": "HowToStep", position: 2, name: "Call or WhatsApp +91 70 9158 5737", text: `Reach the 24/7 booking desk. Confirm therapist, modality and slot in ${locationName}.` },
+      { "@type": "HowToStep", position: 3, name: "Confirm incall or outcall", text: `Choose incall at a hygiene-certified studio or outcall (hotel / apartment / resort) in ${locationName}.` },
+      { "@type": "HowToStep", position: 4, name: "Enjoy your session", text: `Therapist arrives in 45–90 minutes with oils, towels and full kit. Pay at the time of service from ₹2,500.` },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       {/* Hero */}
       <section
@@ -218,6 +268,26 @@ export default async function SpaSlugPage({ params }: Props) {
               <div className="hero-stat"><strong>150+</strong><span>Cities Covered</span></div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* AEO Direct-Answer TL;DR */}
+      <section
+        className="aeo-answer"
+        aria-label={`Quick answer about body massage in ${locationName}`}
+        style={{
+          background: "linear-gradient(180deg,#0a0a05 0%,#0f0e08 100%)",
+          padding: "2.25rem 0",
+          borderBottom: "1px solid rgba(201,168,76,0.18)",
+        }}
+      >
+        <div className="container" style={{ maxWidth: "880px" }}>
+          <p
+            className="aeo-tldr"
+            style={{ fontSize: "1.08rem", lineHeight: 1.85, color: "#e8dcb4", textAlign: "center", margin: 0 }}
+          >
+            <strong style={{ color: "var(--primary-color)" }}>VVIP Spa {locationName}</strong> offers full body massage and wellness therapies in {locationName} from <strong>₹2,500</strong> — Swedish, Thai, deep tissue, aromatherapy, hot stone, Nuru and couple spa. All therapists are <strong>verified, trained female specialists</strong>, available 24/7 for incall &amp; outcall on <a href="tel:+917091585737" style={{ color: "var(--primary-color)", whiteSpace: "nowrap" }}>+91 70 9158 5737</a>. Arrival in 45–90 minutes, no advance payment, 4.9★ rated.
+          </p>
         </div>
       </section>
 

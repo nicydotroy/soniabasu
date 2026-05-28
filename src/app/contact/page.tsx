@@ -1,15 +1,78 @@
 import type { Metadata } from "next";
 
+const SITE = "https://soniabasu.vercel.app";
+const PAGE_URL = `${SITE}/contact`;
+const PAGE_MODIFIED = "2026-05-28";
+
 export const metadata: Metadata = {
   title: "Contact Sonia Basu Mumbai | 24/7 Booking Hotline",
   description:
     "Contact Sonia Basu Mumbai for premium companion bookings available 24/7. Call or WhatsApp +91 70 9158 5737 for instant confirmation. Discreet, professional response guaranteed.",
-  alternates: { canonical: "https://soniabasu.vercel.app/contact" },
+  alternates: { canonical: PAGE_URL },
+  other: { "article:modified_time": PAGE_MODIFIED },
+  openGraph: {
+    type: "website",
+    url: PAGE_URL,
+    title: "Contact Sonia Basu Mumbai | 24/7 Booking Hotline",
+    description: "Call or WhatsApp +91 70 9158 5737 — 24/7 instant booking, complete discretion.",
+    siteName: "Sonia Basu Mumbai",
+    locale: "en_IN",
+  },
+};
+
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": `${PAGE_URL}#contactpage`,
+  url: PAGE_URL,
+  name: "Contact Sonia Basu Mumbai",
+  about: { "@id": `${SITE}#organization` },
+  isPartOf: { "@id": `${SITE}#website` },
+  inLanguage: "en-IN",
+  datePublished: "2018-01-01",
+  dateModified: PAGE_MODIFIED,
+  mainEntity: {
+    "@type": "Organization",
+    "@id": `${SITE}#organization`,
+    name: "Sonia Basu Mumbai",
+    telephone: "+917091585737",
+    email: "info@soniabasu.in",
+    url: SITE,
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+917091585737",
+        contactType: "booking",
+        areaServed: "IN",
+        availableLanguage: ["English", "Hindi", "Marathi"],
+        hoursAvailable: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          opens: "00:00",
+          closes: "23:59",
+        },
+      },
+    ],
+    sameAs: ["https://wa.me/917091585737"],
+  },
+  speakable: { "@type": "SpeakableSpecification", cssSelector: [".aeo-tldr", ".method-details"] },
+};
+
+const contactBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Contact", item: PAGE_URL },
+  ],
 };
 
 export default function ContactPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactBreadcrumb) }} />
+
       {/* Hero */}
       <section
         className="hero"
@@ -39,6 +102,26 @@ export default function ContactPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* AEO Direct-Answer TL;DR */}
+      <section
+        className="aeo-answer"
+        aria-label="Quick answer about contacting Sonia Basu Mumbai"
+        style={{
+          background: "linear-gradient(180deg,#0a0a05 0%,#0f0e08 100%)",
+          padding: "2.25rem 0",
+          borderBottom: "1px solid rgba(201,168,76,0.18)",
+        }}
+      >
+        <div className="container" style={{ maxWidth: "880px" }}>
+          <p
+            className="aeo-tldr"
+            style={{ fontSize: "1.08rem", lineHeight: 1.85, color: "#e8dcb4", textAlign: "center", margin: 0 }}
+          >
+            To contact <strong style={{ color: "var(--primary-color)" }}>Sonia Basu Mumbai</strong>, call or WhatsApp <a href="tel:+917091585737" style={{ color: "var(--primary-color)", whiteSpace: "nowrap" }}>+91 70 9158 5737</a>. The booking team is available <strong>24 hours a day, 7 days a week</strong>, including public holidays. Typical response time is <strong>under 15 minutes</strong>. All communications are encrypted and 100% confidential. Same-day booking is available across Mumbai and 150+ Indian cities.
+          </p>
         </div>
       </section>
 

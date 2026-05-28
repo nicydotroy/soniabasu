@@ -2,11 +2,16 @@ export const dynamic = 'force-dynamic';
 
 const SITEMAP = 'https://soniabasu.vercel.app/sitemap.xml';
 
+// Allow search engines and answer engines (AEO / GEO). Blocking GPTBot,
+// ClaudeBot, PerplexityBot etc. removes us from ChatGPT Search, Claude,
+// Perplexity, Google AI Overviews (Google-Extended), Apple Intelligence
+// (Applebot-Extended) and other generative surfaces.
 const txt = `User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 
+# Traditional search crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -25,57 +30,72 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-# AI / LLM training bots — blocked
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Answer engines / AI search surfaces (allowed for AEO + GEO visibility)
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: OAI-SearchBot
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: PerplexityBot
-Disallow: /
+Allow: /
 
-User-agent: Bytespider
-Disallow: /
-
-User-agent: FacebookBot
-Disallow: /
-
-User-agent: Diffbot
-Disallow: /
-
-User-agent: cohere-ai
-Disallow: /
+User-agent: Perplexity-User
+Allow: /
 
 User-agent: Applebot-Extended
-Disallow: /
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 User-agent: YouBot
-Disallow: /
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
 
 User-agent: Timpibot
-Disallow: /
+Allow: /
 
 User-agent: Omgilibot
-Disallow: /
+Allow: /
 
 Sitemap: ${SITEMAP}
 `;
