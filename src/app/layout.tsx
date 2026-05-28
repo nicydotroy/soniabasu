@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   robots:
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   verification: {
-    google: "nOSn1Xlk8u6KaPfk1WX5wsWlixaet3Dytj386tmy_4Y",
+    google: "AwSvxSKBpplepi5VPfjlo566owNOcKzGrTDtImJEPrI",
   },
   other: { rating: "adult", "revisit-after": "1 days" },
 };
